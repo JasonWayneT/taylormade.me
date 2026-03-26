@@ -12,10 +12,11 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-10 col-xl-8">
               <h1 className="display-4 fw-bold mb-4" style={{ color: 'var(--color-text-header)' }}>
-                Product Manager <span className="text-muted fw-normal mx-2">•</span> AI & Developer Tools
+                Product Manager <span className="text-muted fw-normal mx-2">•</span> Platform & AI Systems
               </h1>
               <p className="lead mb-5" style={{ color: 'var(--color-text-body)', maxWidth: '650px' }}>
-                I design and ship AI-powered workflows that actually get adopted. I've led 0→1 and iterative releases for internal tools and AI assistants used by cross-functional teams.
+                I bridge the gap between complex legacy infrastructure and modern AI capabilities. 
+                With 6+ years in B2B SaaS, I specialize in stabilizing revenue-critical platforms, engineering robust data pipelines, and building the foundational trust required for AI-driven workflows.
               </p>
               <div className="d-flex gap-3">
                 <Link to="/work" className="btn btn-primary px-4 py-3 fw-bold fs-5">

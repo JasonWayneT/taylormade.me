@@ -5,7 +5,7 @@ export default function Contact() {
     <div className="container py-5 my-md-4" style={{ maxWidth: '650px' }}>
       <h1 className="mb-4">Let's Talk</h1>
       <p className="lead mb-5" style={{ color: 'var(--color-text-body)' }}>
-        I am open to new Product Management roles focused on AI products, internal tools, or developer platforms. If you're building something interesting, I'd love to chat.
+        I am actively seeking Product Management roles focused on AI systems, data platforms, or structurally complex B2B products. If you need a PM who can bring order to technical chaos, I'd love to chat.
       </p>
 
       <div className="card border-0 shadow-sm p-4 p-md-5" style={{ backgroundColor: 'var(--color-bg-subtle)', borderRadius: 'var(--border-radius-md)' }}>
@@ -16,7 +16,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="text-uppercase metric-mono mb-1 text-muted" style={{ fontSize: '0.8rem' }}>Email</div>
-              <a href="mailto:taylor@example.com" className="nav-link-custom fw-bold fs-5" style={{ color: 'var(--color-text-header)' }}>taylor@example.com</a>
+              <a href="mailto:Jason.Wayne.T@gmail.com" className="nav-link-custom fw-bold fs-5" style={{ color: 'var(--color-text-header)' }}>Jason.Wayne.T@gmail.com</a>
             </div>
           </div>
           
@@ -26,7 +26,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="text-uppercase metric-mono mb-1 text-muted" style={{ fontSize: '0.8rem' }}>LinkedIn</div>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="nav-link-custom fw-bold fs-5" style={{ color: 'var(--color-text-header)' }}>linkedin.com/in/taylormade</a>
+              <a href="https://www.linkedin.com/in/jasonwaynetaylor/" target="_blank" rel="noreferrer" className="nav-link-custom fw-bold fs-5" style={{ color: 'var(--color-text-header)' }}>linkedin.com/in/jasonwaynetaylor</a>
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="text-uppercase metric-mono mb-1 text-muted" style={{ fontSize: '0.8rem' }}>Location</div>
-              <div className="fw-bold fs-5" style={{ color: 'var(--color-text-header)' }}>San Francisco / Remote</div>
+              <div className="fw-bold fs-5" style={{ color: 'var(--color-text-header)' }}>San Diego, CA</div>
             </div>
           </div>
         </div>

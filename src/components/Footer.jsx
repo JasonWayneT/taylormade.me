@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="container d-flex flex-column flex-md-row align-items-center justify-content-between text-muted">
         <p className="mb-md-0">© {new Date().getFullYear()} AI Product Portfolio</p>
         <div className="d-flex gap-4">
-          <a href="#" className="nav-link-custom"><FiGithub size={20} /></a>
-          <a href="#" className="nav-link-custom"><FiLinkedin size={20} /></a>
-          <a href="mailto:contact@example.com" className="nav-link-custom"><FiMail size={20} /></a>
+          <a href="https://github.com/JasonWayneT" target="_blank" rel="noreferrer" className="nav-link-custom"><FiGithub size={20} /></a>
+          <a href="https://www.linkedin.com/in/jasonwaynetaylor/" target="_blank" rel="noreferrer" className="nav-link-custom"><FiLinkedin size={20} /></a>
+          <a href="mailto:Jason.Wayne.T@gmail.com" className="nav-link-custom"><FiMail size={20} /></a>
         </div>
       </div>
     </footer>
