@@ -63,8 +63,13 @@ export default function CaseStudy() {
       </section>
 
       <div className="text-center py-4">
-        <h3 className="h4 mb-4">Want to discuss this project?</h3>
-        <Link to="/contact" className="btn btn-primary px-4 py-2">Let's talk</Link>
+        <h3 className="h4 mb-4">Want to see it in action?</h3>
+        <div className="d-flex justify-content-center gap-3">
+          <Link to="/contact" className="btn btn-outline-primary px-4 py-2 fw-bold">Let's talk</Link>
+          {project.liveUrl && (
+            <Link to={project.liveUrl} className="btn btn-primary px-4 py-2 fw-bold">Try it out</Link>
+          )}
+        </div>
       </div>
     </article>
   );

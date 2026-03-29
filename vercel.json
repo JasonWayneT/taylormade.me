@@ -1,8 +1,27 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
+  "functions": {
+    "api/job-agent/extract.js": {
+      "maxDuration": 15
+    },
+    "api/job-agent/research.js": {
+      "maxDuration": 60
+    },
+    "api/job-agent/draft.js": {
+      "maxDuration": 60
+    },
+    "api/job-agent/audit.js": {
+      "maxDuration": 60
+    },
+    "api/job-agent/interview.js": {
+      "maxDuration": 60
+    },
+    "api/job-agent/evaluate.js": {
+      "maxDuration": 30
     }
+  },
+  "rewrites": [
+    { "source": "/api/job-agent/(.*)", "destination": "/api/job-agent/$1" },
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

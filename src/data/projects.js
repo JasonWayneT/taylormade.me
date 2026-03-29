@@ -37,5 +37,19 @@ export const projects = [
     approach: "Paired OCR with LLM prompting to extract key-value pairs robustly regardless of the invoice layout.",
     results: "Saved 40 hours of manual data entry per week.",
     learnings: ["Human-in-the-loop UI is just as important as the model accuracy"]
+  },
+  {
+    id: "job-agent",
+    title: "JobAgent: AI-Powered Application Pipeline",
+    summary: "Automated end-to-end recruitment tool that audits resumes, researches companies, and generates tailored interview prep material.",
+    role: "Full Stack Developer",
+    type: "Personal Project",
+    tags: ["Gemini AI", "Vite", "Express", "Automation"],
+    liveUrl: "/job-agent",
+    context: "Manual job applications are time-consuming and often generic, leading to low response rates. Candidates struggle to tailor materials at scale while maintaining factual accuracy.",
+    goals: ["Automate deep-dive company research", "Ensure claim verification via AI auditing to prevent hallucinations", "Generate high-fidelity tailored resumes and cover letters"],
+    approach: "Built a 5-stage pipeline using Gemini 2.0 Flash/Pro with ground-truth auditing. Integrated PDF/DOCX parsing, automated web research tools, and a cynical auditor layer for factual verification.",
+    results: "Reduced preparation time per application from 2 hours to 5 minutes while maintaining 100% factual alignment with source work history.",
+    learnings: ["Multi-stage LLM pipelines require strict state management", "User trust is built through transparent AI auditing and verification"]
   }
 ];
