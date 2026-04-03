@@ -1,7 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { navLinks } from '../data/navigation';
-import { clsx } from 'clsx'; // I'll add this if needed, but I'll use template literals for now
 
 export default function Navigation() {
   const location = useLocation();
