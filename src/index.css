@@ -42,6 +42,7 @@ body {
   color: var(--color-text-body);
   background-color: var(--color-bg-main);
   margin: 0;
+  padding-top: 100px; /* Space for the floating navbar */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -56,6 +57,7 @@ h1, h2, h3, h4, .display-4 {
 .text-gradient {
   background: linear-gradient(135deg, var(--color-primary) 0%, #334155 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -93,7 +95,7 @@ h1, h2, h3, h4, .display-4 {
   background: var(--color-bg-main);
   border: 1px solid var(--color-border-subtle);
   border-radius: var(--radius-xl);
-  padding: 2rem;
+  padding: 3rem; /* Pulsed padding for a premium feel */
   transition: var(--transition-smooth);
 }
 

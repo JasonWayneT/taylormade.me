@@ -14,30 +14,30 @@ export default function ProjectCard({ id, title, description, category, tags }) 
         </span>
       </div>
       
-      <h3 className="h4 fw-bold mb-3 d-flex align-items-center justify-content-between">
+      <h3 className="display-6 fw-bold mb-4 d-flex align-items-center justify-content-between">
         {title}
-        <span className="text-muted ms-2 fs-5" style={{ transform: 'rotate(-45deg)' }}>→</span>
+        <span className="text-secondary ms-2 fs-4" style={{ transform: 'rotate(-45deg)', transition: 'transform 0.3s ease' }}>→</span>
       </h3>
       
-      <p className="text-secondary mb-5 flex-grow-1" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
+      <p className="text-secondary mb-8 flex-grow-1" style={{ fontSize: '1.1rem', lineHeight: '1.7', maxWidth: '90%' }}>
         {description}
       </p>
 
-      <div className="d-flex flex-wrap gap-2 mb-8">
+      <div className="d-flex flex-wrap gap-3 mb-10">
         {tags?.map(tag => (
-          <span key={tag} className="small text-secondary fw-medium px-2 py-1 rounded" style={{ backgroundColor: 'var(--color-bg-subtle)', border: '1px solid var(--color-border-subtle)' }}>
+          <span key={tag} className="small text-secondary fw-bold px-3 py-1 rounded-pill" style={{ backgroundColor: 'var(--color-bg-subtle)', border: '1px solid var(--color-border-subtle)', fontSize: '0.8rem' }}>
             {tag}
           </span>
         ))}
       </div>
 
-      <div className="mt-auto pt-4 border-top">
+      <div className="mt-auto pt-6 border-top">
          <Link 
             to={`/work/${id}`} 
-            className="fw-bold stretched-link d-flex align-items-center gap-2" 
+            className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
             style={{ color: 'var(--color-primary)' }}
          >
-            Read Case Study
+            Read Case Study <span className="ms-1">→</span>
          </Link>
       </div>
     </motion.div>

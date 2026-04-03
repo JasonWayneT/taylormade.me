@@ -14,25 +14,25 @@ export default function Home() {
 
       <section className="py-10 py-md-20">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-10">
+          <div className="row justify-content-center text-center">
+            <div className="col-lg-10 col-xl-9">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               >
-                <h1 className="display-2 fw-bold mb-6 text-gradient" style={{ lineHeight: '1.1' }}>
+                <h1 className="display-2 fw-bold mb-6 text-gradient" style={{ lineHeight: '1.2' }}>
                   Engineering trust in <br />
                   <span style={{ color: 'var(--color-secondary)' }}>complexity.</span>
                 </h1>
                 
-                <h2 className="h4 fw-medium text-secondary mb-10 mb-md-12" style={{ maxWidth: '720px', lineHeight: '1.5' }}>
+                <h2 className="h4 fw-medium text-secondary mb-10 mb-md-12 mx-auto" style={{ maxWidth: '650px', lineHeight: '1.6' }}>
                   Product Manager specialized in stabilizing revenue-critical platforms, 
                   engineering robust data pipelines, and bridging the gap between 
                   legacy infrastructure and AI capabilities.
                 </h2>
 
-                <div className="d-flex flex-column flex-md-row gap-4 mb-20">
+                <div className="d-flex flex-column flex-md-row gap-4 mb-20 justify-content-center">
                   <Link to="/work" className="btn btn-primary px-8 py-4 pill fs-5 mb-2 mb-md-0 shadow-lg">
                     View Case Studies ↗
                   </Link>
