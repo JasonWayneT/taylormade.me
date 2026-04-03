@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
 
 export default function CaseStudy() {
@@ -7,70 +8,102 @@ export default function CaseStudy() {
 
   if (!project) {
     return (
-      <div className="container py-5 my-5 text-center">
-        <h2>Project not found</h2>
-        <Link to="/work" className="btn btn-primary mt-4">Back to Work</Link>
+      <div className="container py-32 text-center">
+        <h2 className="display-4 fw-bold">Project not found</h2>
+        <Link to="/work" className="btn btn-primary mt-8 pill px-8 py-3">Back to Work</Link>
       </div>
     );
   }
 
   return (
-    <article className="container py-5 my-md-4" style={{ maxWidth: '800px' }}>
-      <Link to="/work" className="nav-link-custom d-inline-block mb-5">← Back to Projects</Link>
-      
-      <div className="mb-5 pb-5 border-bottom" style={{ borderColor: 'var(--color-border-subtle) !important' }}>
-        <h1 className="mb-3">{project.title}</h1>
-        <p className="lead mb-4" style={{ color: 'var(--color-text-body)' }}>{project.summary}</p>
-        <div className="d-flex flex-wrap gap-4 mt-5 p-4 rounded" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
-          <div>
-            <div className="text-uppercase metric-mono mb-1 text-muted" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>Role</div>
-            <div className="fw-bold">{project.role}</div>
+    <motion.article 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="pt-32 pb-20"
+    >
+      <div className="container" style={{ maxWidth: '900px' }}>
+        <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 mb-12 text-secondary">
+          ← Back to Projects
+        </Link>
+        
+        <header className="mb-20">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="display-3 fw-bold mb-6"
+          >
+            {project.title}
+          </motion.h1>
+          <p className="lead fw-medium text-secondary mb-12" style={{ fontSize: '1.5rem', lineHeight: '1.4' }}>
+            {project.summary}
+          </p>
+          
+          <div className="row g-8 mt-4">
+            <div className="col-sm-6 col-md-4">
+               <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+                  <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Role</div>
+                  <div className="fw-bold fs-5">{project.role}</div>
+               </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+               <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+                  <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Industry</div>
+                  <div className="fw-bold fs-5">{project.type}</div>
+               </div>
+            </div>
           </div>
-          <div>
-            <div className="text-uppercase metric-mono mb-1 text-muted" style={{ fontSize: '0.8rem', letterSpacing: '0.5px' }}>Type</div>
-            <div className="fw-bold">{project.type}</div>
+        </header>
+
+        <section className="mb-20">
+          <h2 className="display-6 fw-bold mb-8">Context & Problem</h2>
+          <p className="fs-5 text-secondary" style={{ lineHeight: '1.8' }}>{project.context}</p>
+        </section>
+
+        <section className="mb-20 p-10 rounded-xl" style={{ backgroundColor: 'var(--color-bg-subtle)', border: '1px solid var(--color-border-subtle)' }}>
+          <h2 className="h3 fw-bold mb-6">Goals & Key Constraints</h2>
+          <ul className="list-unstyled d-flex flex-column gap-4 mb-0">
+            {project.goals.map((g, i) => (
+              <li key={i} className="d-flex align-items-start gap-3 fs-5 text-secondary">
+                <span className="mt-2" style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: 'var(--color-secondary)', flexShrink: 0 }}></span>
+                {g}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mb-20">
+          <h2 className="display-6 fw-bold mb-8">Approach & Design</h2>
+          <p className="fs-5 text-secondary" style={{ lineHeight: '1.8' }}>{project.approach}</p>
+        </section>
+
+        <section className="mb-20 p-10 rounded-xl shadow-lg border-0 bg-dark text-white">
+          <h2 className="display-6 fw-bold mb-6" style={{ color: 'var(--color-secondary)' }}>Results & Impact</h2>
+          <p className="mb-0 fs-4 fw-medium" style={{ lineHeight: '1.6' }}>{project.results}</p>
+        </section>
+
+        <section className="mb-20">
+          <h3 className="h4 fw-bold mb-8">Executive Takeaways</h3>
+          <div className="row g-6">
+            {project.learnings.map((l, i) => (
+              <div key={i} className="col-md-6">
+                <div className="h-100 p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+                  <p className="mb-0 fw-medium text-secondary">{l}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
+        </section>
+
+        <footer className="text-center py-20 mt-10 border-top">
+          <h3 className="display-6 fw-bold mb-8">Interested in the details?</h3>
+          <div className="d-flex justify-content-center gap-4">
+            <Link to="/contact" className="btn btn-primary pill px-8 py-3 fs-5">Discuss Project</Link>
+            {project.liveUrl && (
+              <Link to={project.liveUrl} className="btn btn-outline-primary pill px-8 py-3 fs-5">Live Demo ↗</Link>
+            )}
+          </div>
+        </footer>
       </div>
-
-      <section className="mb-5">
-        <h2 className="h3 mb-3">Context & Problem</h2>
-        <p style={{ color: 'var(--color-text-body)' }}>{project.context}</p>
-      </section>
-
-      <section className="mb-5">
-        <h2 className="h3 mb-3">Goals & Constraints</h2>
-        <ul className="mb-0" style={{ color: 'var(--color-text-body)' }}>
-          {project.goals.map((g, i) => <li key={i} className="mb-2">{g}</li>)}
-        </ul>
-      </section>
-
-      <section className="mb-5">
-        <h2 className="h3 mb-3">Approach & AI Design</h2>
-        <p style={{ color: 'var(--color-text-body)' }}>{project.approach}</p>
-      </section>
-
-      <section className="mb-5 p-4 rounded" style={{ border: '1px solid var(--color-border-subtle)', backgroundColor: 'var(--color-bg-main)' }}>
-        <h2 className="h3 mb-3" style={{ color: 'var(--color-text-header)' }}>Results & Impact</h2>
-        <p className="mb-0 fs-5 fw-medium" style={{ color: 'var(--color-text-body)' }}>{project.results}</p>
-      </section>
-
-      <section className="mb-5 pb-5 border-bottom" style={{ borderColor: 'var(--color-border-subtle) !important' }}>
-        <h2 className="h3 mb-3">Learnings</h2>
-        <ul className="mb-0" style={{ color: 'var(--color-text-body)' }}>
-          {project.learnings.map((l, i) => <li key={i} className="mb-2">{l}</li>)}
-        </ul>
-      </section>
-
-      <div className="text-center py-4">
-        <h3 className="h4 mb-4">Want to see it in action?</h3>
-        <div className="d-flex justify-content-center gap-3">
-          <Link to="/contact" className="btn btn-outline-primary px-4 py-2 fw-bold">Let's talk</Link>
-          {project.liveUrl && (
-            <Link to={project.liveUrl} className="btn btn-primary px-4 py-2 fw-bold">Try it out</Link>
-          )}
-        </div>
-      </div>
-    </article>
+    </motion.article>
   );
 }

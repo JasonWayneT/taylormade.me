@@ -1,56 +1,46 @@
 import { Link, useLocation } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi';
-import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { navLinks } from '../data/navigation';
+import { clsx } from 'clsx'; // I'll add this if needed, but I'll use template literals for now
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Work', path: '/work' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' },
-  ];
-
   return (
-    <nav className="navbar navbar-expand-lg py-3 mb-4" style={{ backgroundColor: 'var(--color-bg-main)', borderBottom: '1px solid var(--color-border-subtle)' }}>
-      <div className="container">
-        <Link className="navbar-brand fw-bold" style={{ color: 'var(--color-text-header)' }} to="/">
-          Portfolio
+    <div className="nav-container w-100 px-3 d-flex justify-content-center">
+      <motion.nav 
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+        className="glass nav-pill d-flex align-items-center gap-1"
+      >
+        <Link to="/" className="d-flex align-items-center me-3 px-2">
+          <div className="d-flex align-items-center justify-content-center" style={{ width: '32px', height: '32px', borderRadius: '8px', backgroundColor: 'var(--color-primary)', color: 'white', fontWeight: '900', fontSize: '18px' }}>
+            T
+          </div>
         </Link>
-        <button
-          className="navbar-toggler border-0"
-          type="button"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <FiX color="var(--color-action-primary)" size={24} /> : <FiMenu color="var(--color-action-primary)" size={24} />}
-        </button>
-        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-center gap-2">
-            {navLinks.map((link) => (
-              <li className="nav-item" key={link.name}>
-                <Link
-                  to={link.path}
-                  className="nav-link-custom px-3 py-2"
-                  style={{
-                    fontWeight: location.pathname === link.path ? 600 : 400,
-                    color: location.pathname === link.path ? 'var(--color-text-header)' : 'var(--color-text-body)'
-                  }}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-            <li className="nav-item ms-lg-3 mt-3 mt-lg-0">
-              <Link to="/contact" className="btn btn-primary px-4 py-2" onClick={() => setIsOpen(false)}>
-                Hire Me
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+
+        {navLinks.map((link) => {
+          const isActive = location.pathname === link.path;
+          return (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`nav-link px-3 py-2 rounded-pill fw-medium transition-all ${
+                isActive ? 'bg-dark text-white shadow-sm' : 'text-secondary hover-bg-light'
+              }`}
+              style={{ 
+                fontSize: '0.9rem',
+                backgroundColor: isActive ? 'var(--color-primary)' : 'transparent',
+                color: isActive ? '#FFFFFF' : 'var(--color-text-body)',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              {link.label}
+            </Link>
+          );
+        })}
+      </motion.nav>
+    </div>
   );
 }

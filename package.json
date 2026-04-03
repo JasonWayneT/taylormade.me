@@ -15,6 +15,7 @@
     "@google/genai": "^1.47.0",
     "@vercel/analytics": "^2.0.1",
     "bootstrap": "^5.3.8",
+    "framer-motion": "^12.38.0",
     "mammoth": "^1.12.0",
     "pdfjs-dist": "^5.5.207",
     "react": "^19.2.4",

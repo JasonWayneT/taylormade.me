@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 
@@ -6,42 +7,71 @@ export default function Home() {
   const featured = projects.slice(0, 2);
 
   return (
-    <div>
-      <section className="py-5 my-md-5">
+    <div className="position-relative overflow-hidden pt-20">
+      {/* Background Decor */}
+      <div className="bg-blob blob-blue"></div>
+      <div className="bg-blob blob-yellow"></div>
+
+      <section className="py-10 py-md-20">
         <div className="container">
           <div className="row">
-            <div className="col-lg-10 col-xl-8">
-              <h1 className="display-4 fw-bold mb-4" style={{ color: 'var(--color-text-header)' }}>
-                Product Manager <span className="text-muted fw-normal mx-2">•</span> Platform & AI Systems
-              </h1>
-              <p className="lead mb-5" style={{ color: 'var(--color-text-body)', maxWidth: '650px' }}>
-                I bridge the gap between complex legacy infrastructure and modern AI capabilities. 
-                With 6+ years in B2B SaaS, I specialize in stabilizing revenue-critical platforms, engineering robust data pipelines, and building the foundational trust required for AI-driven workflows.
-              </p>
-              <div className="d-flex gap-3">
-                <Link to="/work" className="btn btn-primary px-4 py-3 fw-bold fs-5">
-                  View Selected Work
-                </Link>
-                <Link to="/about" className="btn px-4 py-3 fw-bold fs-5" style={{ backgroundColor: 'transparent', border: '1px solid var(--color-border-subtle)', color: 'var(--color-text-header)' }}>
-                  Read More
-                </Link>
-              </div>
+            <div className="col-lg-10">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <h1 className="display-2 fw-bold mb-6 text-gradient" style={{ lineHeight: '1.1' }}>
+                  Engineering trust in <br />
+                  <span style={{ color: 'var(--color-secondary)' }}>complexity.</span>
+                </h1>
+                
+                <h2 className="h4 fw-medium text-secondary mb-10 mb-md-12" style={{ maxWidth: '720px', lineHeight: '1.5' }}>
+                  Product Manager specialized in stabilizing revenue-critical platforms, 
+                  engineering robust data pipelines, and bridging the gap between 
+                  legacy infrastructure and AI capabilities.
+                </h2>
+
+                <div className="d-flex flex-column flex-md-row gap-4 mb-20">
+                  <Link to="/work" className="btn btn-primary px-8 py-4 pill fs-5 mb-2 mb-md-0 shadow-lg">
+                    View Case Studies ↗
+                  </Link>
+                  <Link to="/about" className="btn btn-outline-primary px-8 py-4 pill fs-5 ms-md-2">
+                    Read Philosophy
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-5 mt-5" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+      <section className="py-20" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
         <div className="container">
-          <div className="d-flex justify-content-between align-items-end mb-5">
-            <h2 className="mb-0">Selected Work</h2>
-            <Link to="/work" className="nav-link-custom fw-bold">View all projects →</Link>
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-12 gap-4">
+            <div>
+               <span className="text-secondary fw-bold text-uppercase small mb-2 d-block" style={{ letterSpacing: '0.1em' }}>
+                  Portfolio Select
+               </span>
+               <h2 className="display-5 fw-bold mb-0">Featured Work</h2>
+            </div>
+            <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 text-dark">
+               Explore all projects →
+            </Link>
           </div>
-          <div className="row g-4">
-            {featured.map(proj => (
-              <div key={proj.id} className="col-md-6">
+          
+          <div className="row g-6">
+            {featured.map((proj, index) => (
+              <motion.div 
+                key={proj.id} 
+                className="col-md-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+              >
                 <ProjectCard {...proj} />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
