@@ -38,20 +38,25 @@
 body {
   font-family: var(--font-sans);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7; /* Increased for breathing room */
   color: var(--color-text-body);
   background-color: var(--color-bg-main);
   margin: 0;
-  padding-top: 100px; /* Space for the floating navbar */
+  padding-top: 140px; /* More space for the floating navbar */
   -webkit-font-smoothing: antialiased;
 }
 
 /* Typography Overrides */
-h1, h2, h3, h4, .display-4 {
+h1, h2, h3, h4, .display-4, .display-2 {
   font-family: var(--font-sans);
   color: var(--color-text-header);
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-weight: 600; /* Lighter weight for a less "heavy" feel */
+  letter-spacing: -0.01em; /* Less aggressive tracking */
+  line-height: 1.25;
+}
+
+.display-2 {
+  font-size: 3.5rem; /* Slightly reduced from default */
 }
 
 .text-gradient {
@@ -71,6 +76,15 @@ h1, h2, h3, h4, .display-4 {
 
 .pill {
   border-radius: var(--radius-full) !important;
+}
+
+.py-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.max-readable {
+  max-width: 680px;
 }
 
 /* Redesigned Components */

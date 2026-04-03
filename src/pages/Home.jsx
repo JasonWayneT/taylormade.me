@@ -7,12 +7,12 @@ export default function Home() {
   const featured = projects.slice(0, 2);
 
   return (
-    <div className="position-relative overflow-hidden pt-20">
+    <div className="position-relative overflow-hidden pt-10">
       {/* Background Decor */}
       <div className="bg-blob blob-blue"></div>
       <div className="bg-blob blob-yellow"></div>
 
-      <section className="py-10 py-md-20">
+      <section className="py-section">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-lg-10 col-xl-9">
@@ -26,7 +26,7 @@ export default function Home() {
                   <span style={{ color: 'var(--color-secondary)' }}>complexity.</span>
                 </h1>
                 
-                <h2 className="h4 fw-medium text-secondary mb-10 mb-md-12 mx-auto" style={{ maxWidth: '650px', lineHeight: '1.6' }}>
+                <h2 className="h4 fw-medium text-secondary mb-10 mb-md-12 mx-auto max-readable" style={{ lineHeight: '1.7' }}>
                   Product Manager specialized in stabilizing revenue-critical platforms, 
                   engineering robust data pipelines, and bridging the gap between 
                   legacy infrastructure and AI capabilities.
@@ -46,21 +46,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+      <section className="py-section" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
         <div className="container">
-          <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-12 gap-4">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-16 gap-4">
             <div>
-               <span className="text-secondary fw-bold text-uppercase small mb-2 d-block" style={{ letterSpacing: '0.1em' }}>
-                  Portfolio Select
+               <span className="text-secondary fw-bold text-uppercase small mb-3 d-block" style={{ letterSpacing: '0.15em' }}>
+                  Selected Expertise
                </span>
-               <h2 className="display-5 fw-bold mb-0">Featured Work</h2>
+               <h2 className="display-4 fw-bold mb-0">Featured Work</h2>
             </div>
-            <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 text-dark">
+            <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 text-dark fs-5">
                Explore all projects →
             </Link>
           </div>
           
-          <div className="row g-6">
+          <div className="row g-10">
             {featured.map((proj, index) => (
               <motion.div 
                 key={proj.id} 

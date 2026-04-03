@@ -19,10 +19,10 @@ export default function CaseStudy() {
     <motion.article 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="pt-32 pb-20"
+      className="pt-10"
     >
-      <div className="container" style={{ maxWidth: '900px' }}>
-        <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 mb-12 text-secondary">
+      <div className="container py-section" style={{ maxWidth: '900px' }}>
+        <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 mb-16 text-secondary" style={{ letterSpacing: '0.05em' }}>
           ← Back to Projects
         </Link>
         
@@ -30,11 +30,11 @@ export default function CaseStudy() {
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="display-3 fw-bold mb-6"
+            className="display-2 fw-bold mb-8"
           >
             {project.title}
           </motion.h1>
-          <p className="lead fw-medium text-secondary mb-12" style={{ fontSize: '1.5rem', lineHeight: '1.4' }}>
+          <p className="h4 fw-medium text-secondary mb-16 max-readable" style={{ lineHeight: '1.6' }}>
             {project.summary}
           </p>
           

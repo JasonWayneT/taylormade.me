@@ -2,20 +2,20 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <div className="pt-32 pb-20 overflow-hidden position-relative min-vh-100 d-flex flex-column">
-      <div className="bg-blob blob-blue opacity-10" style={{ top: '-10%', left: '0' }}></div>
-      <div className="bg-blob blob-yellow opacity-10" style={{ bottom: '-10%', right: '0' }}></div>
+    <div className="pt-10 overflow-hidden position-relative min-vh-100 d-flex flex-column">
+      <div className="bg-blob blob-blue" style={{ top: '-10%', left: '0', opacity: '0.05' }}></div>
+      <div className="bg-blob blob-yellow" style={{ bottom: '-10%', right: '0', opacity: '0.05' }}></div>
 
-      <div className="container my-auto">
-        <div className="row g-12 align-items-center">
-          <div className="col-lg-6 mb-12 mb-lg-0">
+      <div className="container my-auto py-section">
+        <div className="row g-12 align-items-center justify-content-center">
+          <div className="col-lg-5 mb-16 mb-lg-0">
             <motion.div
                initial={{ opacity: 0, x: -30 }}
                animate={{ opacity: 1, x: 0 }}
                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h1 className="display-3 fw-bold mb-8">Discuss a <br /><span className="text-gradient">high-intent</span> project.</h1>
-              <p className="lead fw-medium mb-10 text-secondary" style={{ maxWidth: '480px' }}>
+              <h1 className="display-2 fw-bold mb-8">Discuss a <br /><span className="text-gradient">high-intent</span> project.</h1>
+              <p className="h4 fw-medium mb-12 text-secondary max-readable" style={{ lineHeight: '1.6' }}>
                 I am currently open to high-impact Product Management and Platform Engineering opportunities.
               </p>
               
