@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ProjectCard from '../components/ProjectCard';
+import PlatformShowcase from '../components/PlatformShowcase';
 import { projects } from '../data/projects';
+import { platforms } from '../data/platforms';
 
 export default function Home() {
   const featured = projects.slice(0, 2);
@@ -76,6 +78,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PlatformShowcase />
     </div>
   );
 }

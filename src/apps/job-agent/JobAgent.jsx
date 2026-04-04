@@ -251,9 +251,9 @@ export default function JobAgent() {
   };
 
   const dropzoneStyle = (dragOver) => ({
-    border: `1px dashed ${dragOver ? 'var(--color-action-primary)' : 'var(--color-border-subtle)'}`,
-    backgroundColor: dragOver ? 'rgba(var(--color-action-primary-rgb, 99,102,241), 0.07)' : 'var(--color-bg-subtle)',
-    transition: 'var(--transition-fast)',
+    border: `1px dashed ${dragOver ? 'var(--color-primary)' : 'var(--color-border-subtle)'}`,
+    backgroundColor: dragOver ? 'rgba(2, 6, 23, 0.05)' : 'var(--color-bg-subtle)',
+    transition: 'var(--transition-smooth)',
     cursor: 'pointer',
   });
 
@@ -284,7 +284,7 @@ export default function JobAgent() {
       <div className="row justify-content-center">
         {/* Input Form Column */}
         <div className="col-lg-5 mb-4">
-          <div className="card h-100" style={{ backgroundColor: 'var(--color-bg-main)', border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--border-radius-md)' }}>
+          <div className="card h-100" style={{ backgroundColor: 'var(--color-bg-main)', border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--radius-md)' }}>
             <div className="card-body p-4 p-md-5">
               
               <div className="mb-4">
@@ -420,7 +420,7 @@ export default function JobAgent() {
 
         {/* Pipeline / Results Column */}
         <div className="col-lg-7 mb-4">
-          <div className="card h-100" style={{ backgroundColor: 'var(--color-bg-main)', border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--border-radius-md)' }}>
+          <div className="card h-100" style={{ backgroundColor: 'var(--color-bg-main)', border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--radius-md)' }}>
             <div className="card-body p-4 p-md-5">
               <h4 className="fw-bold mb-4" style={{ color: 'var(--color-text-header)' }}>Pipeline Status</h4>
               
@@ -434,7 +434,7 @@ export default function JobAgent() {
                       ? <FiXCircle color="#EF4444" className="me-3" size={20} />
                       : pipelineStep > 1
                         ? <FiCheckCircle color="var(--color-text-header)" className="me-3" size={20} />
-                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-action-primary)' }} />
+                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-primary)' }} />
                     }
                     <span className={pipelineStep > 1 ? 'fw-bold' : ''} style={{ color: pipelineStep > 1 ? 'var(--color-text-header)' : 'var(--color-text-body)' }}>
                       Stage 1: Gatekeeper Evaluation
@@ -446,7 +446,7 @@ export default function JobAgent() {
                     <li className="d-flex align-items-center mb-3">
                       {pipelineStep > 2
                         ? <FiCheckCircle color="var(--color-text-header)" className="me-3" size={20} />
-                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-action-primary)' }} />
+                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-primary)' }} />
                       }
                       <span className={pipelineStep > 2 ? 'fw-bold' : ''} style={{ color: pipelineStep > 2 ? 'var(--color-text-header)' : 'var(--color-text-body)' }}>
                         Stage 2: Company Intelligence Gathering
@@ -458,7 +458,7 @@ export default function JobAgent() {
                     <li className="d-flex align-items-center mb-3">
                       {pipelineStep > 3
                         ? <FiCheckCircle color="var(--color-text-header)" className="me-3" size={20} />
-                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-action-primary)' }} />
+                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-primary)' }} />
                       }
                       <span className={pipelineStep > 3 ? 'fw-bold' : ''} style={{ color: pipelineStep > 3 ? 'var(--color-text-header)' : 'var(--color-text-body)' }}>
                         Stage 3: Resume &amp; Cover Letter Drafting
@@ -470,7 +470,7 @@ export default function JobAgent() {
                     <li className="d-flex align-items-center mb-3">
                       {pipelineStep > 4
                         ? <FiCheckCircle color="var(--color-text-header)" className="me-3" size={20} />
-                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-action-primary)' }} />
+                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-primary)' }} />
                       }
                       <span className={pipelineStep > 4 ? 'fw-bold' : ''} style={{ color: pipelineStep > 4 ? 'var(--color-text-header)' : 'var(--color-text-body)' }}>
                         Stage 4: Cynical Auditor — Claim Verification
@@ -482,7 +482,7 @@ export default function JobAgent() {
                     <li className="d-flex align-items-center mb-3">
                       {pipelineStep > 5
                         ? <FiCheckCircle color="var(--color-text-header)" className="me-3" size={20} />
-                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-action-primary)' }} />
+                        : <span className="spinner-border spinner-border-sm me-3" style={{ color: 'var(--color-primary)' }} />
                       }
                       <span className={pipelineStep > 5 ? 'fw-bold' : ''} style={{ color: pipelineStep > 5 ? 'var(--color-text-header)' : 'var(--color-text-body)' }}>
                         Stage 5: Interview Cheat Sheet — Generation &amp; Audit
@@ -501,7 +501,7 @@ export default function JobAgent() {
                     backgroundColor: 'rgba(239, 68, 68, 0.07)',
                     border: '1px solid rgba(239, 68, 68, 0.4)',
                     borderLeft: '4px solid #EF4444',
-                    borderRadius: 'var(--border-radius-md)',
+                    borderRadius: 'var(--radius-md)',
                   }}
                 >
                   <div className="d-flex align-items-center gap-2 mb-2">
@@ -534,7 +534,7 @@ export default function JobAgent() {
                     backgroundColor: 'var(--color-bg-subtle)',
                     border: '1px solid var(--color-border-subtle)',
                     borderLeft: '4px solid var(--color-action-primary)',
-                    borderRadius: 'var(--border-radius-md)',
+                    borderRadius: 'var(--radius-md)',
                   }}
                 >
                   <h5 className="fw-bold" style={{ color: 'var(--color-text-header)' }}>
@@ -555,7 +555,7 @@ export default function JobAgent() {
                   </h4>
                   <div
                     className="p-4 bg-white"
-                    style={{ border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--border-radius-md)', WebkitPrintColorAdjust: 'exact', color: '#000' }}
+                    style={{ border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--radius-md)', WebkitPrintColorAdjust: 'exact', color: '#000' }}
                     ref={resumeRef}
                   >
                     <div dangerouslySetInnerHTML={{ __html: draftedResume }} />
@@ -569,7 +569,7 @@ export default function JobAgent() {
                   </h4>
                   <div
                     className="p-4 bg-white"
-                    style={{ border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--border-radius-md)', WebkitPrintColorAdjust: 'exact', color: '#000' }}
+                    style={{ border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--radius-md)', WebkitPrintColorAdjust: 'exact', color: '#000' }}
                     ref={clRef}
                   >
                     <div dangerouslySetInnerHTML={{ __html: draftedCoverLetter }} />
@@ -585,7 +585,7 @@ export default function JobAgent() {
                       </h4>
                       <div
                         className="p-4 bg-white"
-                        style={{ border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--border-radius-md)', WebkitPrintColorAdjust: 'exact', color: '#000' }}
+                        style={{ border: '1px solid var(--color-border-subtle)', borderRadius: 'var(--radius-md)', WebkitPrintColorAdjust: 'exact', color: '#000' }}
                         ref={cheatRef}
                       >
                         <div dangerouslySetInnerHTML={{ __html: draftedCheatSheet }} />
