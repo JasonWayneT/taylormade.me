@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-export default function ProjectCard({ id, title, description, category, tags }) {
+export default function ProjectCard({ id, title, summary, type, tags, liveUrl }) {
+  const linkPath = liveUrl || `/case-study/${id}`;
+  const isExternal = liveUrl && liveUrl.startsWith('http');
+
   return (
     <motion.div 
       whileHover={{ y: -6 }}
@@ -10,7 +13,7 @@ export default function ProjectCard({ id, title, description, category, tags }) 
     >
       <div className="mb-4">
         <span className="badge pill px-3 py-2 text-uppercase fw-bold" style={{ backgroundColor: 'var(--color-primary-soft)', color: 'var(--color-primary)', fontSize: '0.75rem', letterSpacing: '0.05em' }}>
-          {category}
+          {type}
         </span>
       </div>
       
@@ -20,7 +23,7 @@ export default function ProjectCard({ id, title, description, category, tags }) 
       </h3>
       
       <p className="text-secondary mb-8 flex-grow-1" style={{ fontSize: '1.1rem', lineHeight: '1.7', maxWidth: '90%' }}>
-        {description}
+        {summary}
       </p>
 
       <div className="d-flex flex-wrap gap-3 mb-10">
@@ -32,13 +35,25 @@ export default function ProjectCard({ id, title, description, category, tags }) 
       </div>
 
       <div className="mt-auto pt-6 border-top">
-         <Link 
-            to={`/work/${id}`} 
-            className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
-            style={{ color: 'var(--color-primary)' }}
-         >
-            Read Case Study <span className="ms-1">→</span>
-         </Link>
+         {isExternal ? (
+           <a 
+              href={linkPath} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
+              style={{ color: 'var(--color-primary)' }}
+           >
+              Visit Project <span className="ms-1">↗</span>
+           </a>
+         ) : (
+           <Link 
+              to={linkPath} 
+              className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
+              style={{ color: 'var(--color-primary)' }}
+           >
+              Read Case Study <span className="ms-1">→</span>
+           </Link>
+         )}
       </div>
     </motion.div>
   );
