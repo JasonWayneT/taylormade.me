@@ -53,33 +53,14 @@ export default function PlatformShowcase() {
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                   className="position-relative"
                 >
-                  {platform.id === 'cision-c3' ? (
-                    <div className="rounded-xl overflow-hidden shadow-2xl border" style={{ borderColor: 'var(--color-border-subtle)' }}>
-                      <img 
-                        src={platform.images.coverage} 
-                        alt={platform.name} 
-                        className="img-fluid w-100 object-fit-cover"
-                        style={{ maxHeight: '450px' }}
-                      />
-                    </div>
-                  ) : (
-                    <div className="d-flex gap-4">
-                      <div className="flex-grow-1 rounded-xl overflow-hidden shadow-lg border" style={{ borderColor: 'var(--color-border-subtle)' }}>
-                        <img 
-                          src={platform.images.hero} 
-                          alt={`${platform.name} Hero`} 
-                          className="img-fluid w-100 object-fit-cover h-100"
-                        />
-                      </div>
-                      <div className="rounded-xl overflow-hidden shadow-2xl border bg-white" style={{ borderColor: 'var(--color-border-subtle)', maxWidth: '180px' }}>
-                        <img 
-                          src={platform.images.threat} 
-                          alt={`${platform.name} Detail`} 
-                          className="img-fluid w-100 object-fit-cover"
-                        />
-                      </div>
-                    </div>
-                  )}
+                  <div className="rounded-xl overflow-hidden shadow-2xl border" style={{ borderColor: 'var(--color-border-subtle)' }}>
+                    <img 
+                      src={platform.id === 'cision-c3' ? platform.images.coverage : platform.images.hero} 
+                      alt={platform.name} 
+                      className="img-fluid w-100 object-fit-cover"
+                      style={{ maxHeight: '450px' }}
+                    />
+                  </div>
                   
                   {/* Decorative element */}
                   <div 
