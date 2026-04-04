@@ -5,11 +5,11 @@ export default function PlatformShowcase() {
   return (
     <section className="py-section overflow-hidden">
       <div className="container">
-        <div className="mb-20 text-center">
+        <div className="mb-12 text-center">
            <span className="text-secondary fw-bold text-uppercase small mb-3 d-block" style={{ letterSpacing: '0.15em' }}>
-              System Pedigree
+              Core Impact
            </span>
-           <h2 className="display-4 fw-bold">Platforms & Systems</h2>
+           <h2 className="display-4 fw-bold">Platform Pedigree</h2>
         </div>
 
         <div className="d-flex flex-column gap-32">

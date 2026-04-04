@@ -48,7 +48,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-section" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+      <PlatformShowcase />
+
+      <section className="py-section border-top-subtle">
         <div className="container">
           <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-16 gap-4">
             <div>
@@ -78,8 +80,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <PlatformShowcase />
     </div>
   );
 }
