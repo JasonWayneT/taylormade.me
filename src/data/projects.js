@@ -1,5 +1,20 @@
 export const projects = [
   {
+    id: "kinbridge-last-words",
+    title: "KinBridge: Last Words",
+    summary: "AI-guided legacy creation system helping seniors preserve voice, stories, and final wishes.",
+    role: "Product Owner / Designer",
+    type: "0→1 Product",
+    tags: ["AI Voice Cloning", "LLM", "UX Design", "Privacy-First"],
+    liveUrl: "https://kinbridge.polsia.app/",
+    image: "/images/projects/kinbridge.png",
+    context: "End-of-life planning is often cold and clinical. Families frequently lose the voice and stories of their loved ones before they can be captured.",
+    goals: ["Gently nudge seniors into recording life stories", "Maintain cultural/spiritual authenticity via narrator voices", "Ensure absolute data privacy and encryption"],
+    approach: "Designed a compassionate conversation system that surfaces the chapters of a full life—childhood, career, wisdom. Integrated secure voice cloning to allow families to hear their loved ones' voices for generations, matched with spiritual narrator options.",
+    results: "Launched a one-time 'Legacy Pass' model that removes the friction of subscriptions. Successfully preserved thousands of messages and life stories now accessible via family memorial dashboards.",
+    learnings: ["Compassionate UX requires slowing down the interaction pace", "Spiritual and cultural alignment is a key trust-builder for legacy technology"]
+  },
+  {
     id: "ai-triage-assistant",
     title: "AI Triage Assistant for Support Tickets",
     summary: "LLM assistant that cut triage time for support tickets by 35% for a 40-person team.",
