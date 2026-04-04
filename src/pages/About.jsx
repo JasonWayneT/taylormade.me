@@ -55,26 +55,23 @@ export default function About() {
           </div>
 
           <div className="col-lg-4 offset-lg-1">
-             <div className="p-10 rounded-xl" style={{ backgroundColor: 'var(--color-bg-subtle)', border: '1px solid var(--color-border-subtle)' }}>
-                <h3 className="h6 fw-bold text-uppercase mb-8" style={{ letterSpacing: '0.15em', color: 'var(--color-secondary)' }}>Snapshot</h3>
-                <div className="d-flex flex-column gap-6">
-                   <div>
-                      <span className="small text-muted d-block mb-2">Current</span>
-                      <span className="fw-bold fs-5">Principal Platform Consultant</span>
-                   </div>
-                   <hr className="my-2" />
-                   <div>
-                      <span className="small text-muted d-block mb-2">Previous</span>
-                      <span className="fw-bold fs-5">Senior Product Manager • Cision</span>
-                   </div>
-                   <hr className="my-2" />
-                   <div>
-                      <span className="small text-muted d-block mb-2">Expertise</span>
-                      <div className="d-flex flex-wrap gap-3 mt-3">
-                         <span className="badge bg-white text-dark border-0 shadow-sm p-3 rounded-pill fw-bold" style={{ fontSize: '0.75rem' }}>SaaS</span>
-                         <span className="badge bg-white text-dark border-0 shadow-sm p-3 rounded-pill fw-bold" style={{ fontSize: '0.75rem' }}>B2B</span>
-                         <span className="badge bg-white text-dark border-0 shadow-sm p-3 rounded-pill fw-bold" style={{ fontSize: '0.75rem' }}>Data Science</span>
-                      </div>
+             <div className="d-flex flex-column gap-6">
+                <div className="p-8 rounded-xl border border-light shadow-sm" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+                   <div className="h6 fw-bold text-uppercase mb-4 text-secondary" style={{ letterSpacing: '0.1em' }}>Current Role</div>
+                   <div className="fw-bold fs-4">Principal Platform Consultant</div>
+                </div>
+                
+                <div className="p-8 rounded-xl border border-light shadow-sm" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+                   <div className="h6 fw-bold text-uppercase mb-4 text-secondary" style={{ letterSpacing: '0.1em' }}>Previously</div>
+                   <div className="fw-bold fs-4">Senior Product Manager • Cision</div>
+                </div>
+
+                <div className="p-8 rounded-xl border border-light shadow-sm" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+                   <div className="h6 fw-bold text-uppercase mb-4 text-secondary" style={{ letterSpacing: '0.1em' }}>Core Expertise</div>
+                   <div className="d-flex flex-wrap gap-3 mt-2">
+                      <span className="badge bg-white text-dark border-0 shadow-sm px-4 py-2 rounded-pill fw-bold" style={{ fontSize: '0.8rem' }}>SaaS</span>
+                      <span className="badge bg-white text-dark border-0 shadow-sm px-4 py-2 rounded-pill fw-bold" style={{ fontSize: '0.8rem' }}>B2B</span>
+                      <span className="badge bg-white text-dark border-0 shadow-sm px-4 py-2 rounded-pill fw-bold" style={{ fontSize: '0.8rem' }}>Enterprise</span>
                    </div>
                 </div>
              </div>

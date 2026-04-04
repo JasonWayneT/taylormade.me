@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="bg-blob blob-blue" style={{ top: '-10%', left: '0', opacity: '0.05' }}></div>
       <div className="bg-blob blob-yellow" style={{ bottom: '-10%', right: '0', opacity: '0.05' }}></div>
 
-      <div className="container my-auto py-section">
+      <div className="container my-auto pt-20 pb-32">
         <div className="row g-12 align-items-center justify-content-center">
           <div className="col-lg-5 mb-16 mb-lg-0">
             <motion.div
@@ -15,7 +15,7 @@ export default function Contact() {
                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <h1 className="display-2 fw-bold mb-8">Discuss a <br /><span className="text-gradient">high-intent</span> project.</h1>
-              <p className="h4 fw-medium mb-12 text-secondary max-readable" style={{ lineHeight: '1.6' }}>
+              <p className="h4 fw-medium mb-12 text-secondary" style={{ lineHeight: '1.6' }}>
                 I am currently open to high-impact Product Management and Platform Engineering opportunities.
               </p>
               

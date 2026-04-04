@@ -5,25 +5,26 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-10 mt-20" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+    <footer className="py-20 border-top-subtle mt-20" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
       <div className="container">
-        <div className="row g-10 align-items-center mb-10">
+        <div className="row g-12 justify-content-between align-items-center">
           <div className="col-lg-6">
-            <h2 className="display-5 fw-bold mb-4">Let's build something <span className="text-gradient">remarkable</span> together.</h2>
-            <p className="lead text-secondary mb-8" style={{ maxWidth: '450px' }}>
+            <h2 className="display-5 fw-bold mb-8">Let's build something <br /><span className="text-gradient">remarkable together.</span></h2>
+            <p className="fs-5 text-secondary mb-10 max-readable">
               I'm looking for high-impact opportunities to help stabilize and scale revenue-critical platforms.
             </p>
-            <div className="d-flex gap-3">
-              <Link to="/contact" className="btn btn-primary px-5 py-3 pill shadow-lg">Get in touch</Link>
-              <a href="mailto:jason.taylor@example.com" className="btn btn-outline-primary px-5 py-3 pill">Send an email</a>
+            <div className="d-flex flex-wrap gap-4">
+              <Link to="/contact" className="btn btn-primary px-8 py-3 pill fs-5">Get in touch</Link>
+              <a href="mailto:jason.taylor@example.com" className="btn btn-outline-primary px-8 py-3 pill fs-5">Send an email</a>
             </div>
           </div>
-          <div className="col-lg-6 mt-10 mt-lg-0 text-lg-end">
-             <div className="d-flex flex-column gap-3">
-                <a href="#" className="h4 fw-bold nav-link-custom mb-0">LinkedIn ↗</a>
-                <a href="#" className="h4 fw-bold nav-link-custom mb-0">GitHub ↗</a>
-                <a href="#" className="h4 fw-bold nav-link-custom mb-0">Resume ↗</a>
-             </div>
+          
+          <div className="col-lg-4">
+            <div className="d-flex flex-column gap-4 text-lg-end">
+               <a href="#" className="h4 fw-bold nav-link-custom pb-2 border-bottom-subtle">LinkedIn ↗</a>
+               <a href="#" className="h4 fw-bold nav-link-custom pb-2 border-bottom-subtle">GitHub ↗</a>
+               <a href="#" className="h4 fw-bold nav-link-custom pb-2 border-bottom-subtle">Resume ↗</a>
+            </div>
           </div>
         </div>
 
