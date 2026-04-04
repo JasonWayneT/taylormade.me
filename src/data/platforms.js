@@ -24,7 +24,7 @@ export const platforms = [
     tagline: 'Modern, Apple-Native Security UX',
     description: `Product Owner for a high-performance Mac security suite. Focused on translating complex malware detection logic into a human-centric interface that prioritized system performance and user trust. Strategized the functional UX for threat notification and real-time system monitoring.`,
     images: {
-      hero: '/images/platforms/airo-hero.png',
+      hero: '/images/platforms/airo-hero.jpg',
       threat: '/images/platforms/airo-threat-detected.png',
       progress: '/images/platforms/airo-scan-progress.png',
       list: '/images/platforms/airo-threat-list.png'
