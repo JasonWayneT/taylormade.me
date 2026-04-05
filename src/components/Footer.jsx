@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-20 border-top-subtle mt-20" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
+    <footer className="border-top-subtle mt-20" style={{ backgroundColor: 'var(--color-bg-subtle)', paddingTop: '8rem', paddingBottom: '5rem' }}>
       <div className="container">
         <div className="row g-12 justify-content-between align-items-center">
           <div className="col-lg-6">

@@ -12,7 +12,7 @@ export default function PlatformShowcase() {
            <h2 className="display-4 fw-bold">Platform Pedigree</h2>
         </div>
 
-        <div className="d-flex flex-column gap-32">
+        <div className="d-flex flex-column" style={{ gap: '8rem' }}>
           {platforms.map((platform, index) => (
             <div key={platform.id} className={`row g-12 align-items-center ${index % 2 === 1 ? 'flex-md-row-reverse' : ''}`}>
               <div className="col-lg-6">
