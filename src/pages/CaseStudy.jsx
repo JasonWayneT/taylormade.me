@@ -19,7 +19,7 @@ export default function CaseStudy() {
     <motion.article 
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="pt-10"
+      className="pt-32"
     >
       <div className="container py-section" style={{ maxWidth: '900px' }}>
         <Link to="/work" className="btn btn-link text-decoration-none fw-bold p-0 mb-16 text-secondary" style={{ letterSpacing: '0.05em' }}>
@@ -52,61 +52,55 @@ export default function CaseStudy() {
             </div>
           )}
           
-          <div className="row g-8 mt-4">
-
+          <div className="row g-10 mt-12 pt-10 border-top">
             <div className="col-sm-6 col-md-4">
-               <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
-                  <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Role</div>
-                  <div className="fw-bold fs-5">{project.role}</div>
-               </div>
+                <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Role</div>
+                <div className="fw-bold fs-5">{project.role}</div>
             </div>
             <div className="col-sm-6 col-md-4">
-               <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
-                  <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Industry</div>
-                  <div className="fw-bold fs-5">{project.type}</div>
-               </div>
+                <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Industry</div>
+                <div className="fw-bold fs-5">{project.type}</div>
             </div>
           </div>
         </header>
 
-        <section className="mb-20">
+        <section className="mb-24">
           <h2 className="display-6 fw-bold mb-8">Context & Problem</h2>
           <p className="fs-5 text-secondary" style={{ lineHeight: '1.8' }}>{project.context}</p>
         </section>
 
-        <section className="mb-20 p-10 rounded-xl" style={{ backgroundColor: 'var(--color-bg-subtle)', border: '1px solid var(--color-border-subtle)' }}>
-          <h2 className="h3 fw-bold mb-6">Goals & Key Constraints</h2>
-          <ul className="list-unstyled d-flex flex-column gap-4 mb-0">
+        <section className="mb-24">
+          <h2 className="display-6 fw-bold mb-8">Goals & Constraints</h2>
+          <ul className="list-unstyled d-flex flex-column gap-6 mb-0">
             {project.goals.map((g, i) => (
-              <li key={i} className="d-flex align-items-start gap-3 fs-5 text-secondary">
-                <span className="mt-2" style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: 'var(--color-secondary)', flexShrink: 0 }}></span>
-                {g}
+              <li key={i} className="d-flex align-items-start gap-4 fs-5 text-secondary">
+                <span className="mt-3" style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: 'var(--color-secondary)', flexShrink: 0 }}></span>
+                <span style={{ lineHeight: '1.7' }}>{g}</span>
               </li>
             ))}
           </ul>
         </section>
 
-        <section className="mb-20">
+        <section className="mb-24">
           <h2 className="display-6 fw-bold mb-8">Approach & Design</h2>
           <p className="fs-5 text-secondary" style={{ lineHeight: '1.8' }}>{project.approach}</p>
         </section>
 
-        <section className="mb-20 p-10 rounded-xl shadow-lg border-0 bg-dark text-white">
-          <h2 className="display-6 fw-bold mb-6" style={{ color: 'var(--color-secondary)' }}>Results & Impact</h2>
-          <p className="mb-0 fs-4 fw-medium" style={{ lineHeight: '1.6' }}>{project.results}</p>
+        <section className="mb-24 py-12 border-top border-bottom">
+          <h2 className="display-6 fw-bold mb-8">Results & Impact</h2>
+          <p className="mb-0 display-6 fw-bold" style={{ lineHeight: '1.4', color: 'var(--color-primary)' }}>{project.results}</p>
         </section>
 
-        <section className="mb-20">
-          <h3 className="h4 fw-bold mb-8">Executive Takeaways</h3>
-          <div className="row g-6">
+        <section className="mb-24">
+          <h2 className="display-6 fw-bold mb-8">Executive Takeaways</h2>
+          <ul className="list-unstyled d-flex flex-column gap-8 mb-0">
             {project.learnings.map((l, i) => (
-              <div key={i} className="col-md-6">
-                <div className="h-100 p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
-                  <p className="mb-0 fw-medium text-secondary">{l}</p>
-                </div>
-              </div>
+              <li key={i} className="d-flex align-items-start gap-4">
+                <span className="fs-4 text-secondary fw-bold" style={{ opacity: 0.3 }}>0{i+1}</span>
+                <p className="mb-0 fs-5 fw-medium text-secondary" style={{ lineHeight: '1.7' }}>{l}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
 
         <footer className="text-center py-20 mt-10 border-top">
