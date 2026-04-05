@@ -35,25 +35,13 @@ export default function ProjectCard({ id, title, summary, type, tags, liveUrl })
       </div>
 
       <div className="mt-auto pt-6 border-top">
-         {isExternal ? (
-           <a 
-              href={linkPath} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
-              style={{ color: 'var(--color-primary)' }}
-           >
-              Visit Project <span className="ms-1">↗</span>
-           </a>
-         ) : (
-           <Link 
-              to={linkPath} 
-              className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
-              style={{ color: 'var(--color-primary)' }}
-           >
-              Read Case Study <span className="ms-1">→</span>
-           </Link>
-         )}
+         <Link 
+            to={`/case-study/${id}`} 
+            className="fw-bold fs-5 stretched-link d-flex align-items-center gap-2 text-decoration-none" 
+            style={{ color: 'var(--color-primary)' }}
+         >
+            Read Case Study <span className="ms-1">→</span>
+         </Link>
       </div>
     </motion.div>
   );

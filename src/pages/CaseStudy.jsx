@@ -34,11 +34,26 @@ export default function CaseStudy() {
           >
             {project.title}
           </motion.h1>
-          <p className="h4 fw-medium text-secondary mb-16 max-readable" style={{ lineHeight: '1.6' }}>
+          <p className="h4 fw-medium text-secondary mb-10 max-readable" style={{ lineHeight: '1.6' }}>
             {project.summary}
           </p>
           
+          {project.liveUrl && (
+            <div className="mb-16">
+               {project.liveUrl.startsWith('http') ? (
+                 <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary pill px-8 py-3 fs-5 shadow-sm">
+                   Visit Live Project ↗
+                 </a>
+               ) : (
+                 <Link to={project.liveUrl} className="btn btn-primary pill px-8 py-3 fs-5 shadow-sm">
+                   Launch Project App →
+                 </Link>
+               )}
+            </div>
+          )}
+          
           <div className="row g-8 mt-4">
+
             <div className="col-sm-6 col-md-4">
                <div className="p-6 rounded-xl border" style={{ backgroundColor: 'var(--color-bg-subtle)' }}>
                   <div className="small text-uppercase fw-bold text-muted mb-2" style={{ letterSpacing: '0.1em' }}>Role</div>
@@ -99,7 +114,15 @@ export default function CaseStudy() {
           <div className="d-flex justify-content-center gap-4">
             <Link to="/contact" className="btn btn-primary pill px-8 py-3 fs-5">Discuss Project</Link>
             {project.liveUrl && (
-              <Link to={project.liveUrl} className="btn btn-outline-primary pill px-8 py-3 fs-5">Live Demo ↗</Link>
+              project.liveUrl.startsWith('http') ? (
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary pill px-8 py-3 fs-5">
+                   Live Demo ↗
+                </a>
+              ) : (
+                <Link to={project.liveUrl} className="btn btn-outline-primary pill px-8 py-3 fs-5">
+                   Launch App →
+                </Link>
+              )
             )}
           </div>
         </footer>
