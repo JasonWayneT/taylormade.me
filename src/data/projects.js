@@ -16,16 +16,16 @@ export const projects = [
   },
   {
     id: "job-agent",
-    title: "JobAgent: AI-Powered Application Pipeline",
-    summary: "Automated end-to-end recruitment tool that audits resumes, researches companies, and generates tailored interview prep material.",
-    role: "Full Stack Developer",
-    type: "Personal Project",
-    tags: ["Gemini AI", "Vite", "Express", "Automation"],
-    liveUrl: "/job-agent",
-    context: "Manual job applications are time-consuming and often generic, leading to low response rates. Candidates struggle to tailor materials at scale while maintaining factual accuracy.",
-    goals: ["Automate deep-dive company research", "Ensure claim verification via AI auditing to prevent hallucinations", "Generate high-fidelity tailored resumes and cover letters"],
-    approach: "Built a 5-stage pipeline using Gemini 2.0 Flash/Pro with ground-truth auditing. Integrated PDF/DOCX parsing, automated web research tools, and a cynical auditor layer for factual verification.",
-    results: "Reduced preparation time per application from 2 hours to 5 minutes while maintaining 100% factual alignment with source work history.",
-    learnings: ["Multi-stage LLM pipelines require strict state management", "User trust is built through transparent AI auditing and verification"]
+    title: "JobAgent: Automated Scout & Application Pipeline",
+    summary: "A local, zero-knowledge web application that automates job scouting, applies deterministic gate filters, and generates factual application materials across a 6-stage pipeline.",
+    role: "Full-Stack Architect",
+    type: "Standalone Web Application",
+    tags: ["React", "Express", "SQLite", "Tailwind CSS", "Gemini AI"],
+    liveUrl: "https://github.com/JasonWayneT/JobHuntAgent",
+    context: "The modern job hunt is an exhausting firehose of noisy postings requiring manual filtering and unique materials that rapidly drain candidate energy.",
+    goals: ["Build a zero-knowledge local architecture guaranteeing data privacy", "Implement a deterministic pre-filter scout to save time and API costs", "Automate a stateful 6-stage pipeline strictly grounded in verified experience"],
+    approach: "Engineered a local React + Express application backed by Better-SQLite3. Implemented an automated background scout that ingests job board firehoses and applies deterministic blocklists before surfacing roles. Built an interactive React dashboard for real-time tracking, along with a strict AI generation layer that builds tailored resumes via local work-history documents.",
+    results: "Replaced manual spreadsheeting with a fully automated 'local job sanctuary.' The scout strips away thousands of irrelevant roles instantly, reducing pipeline preparation time from 2 hours to 5 minutes per high-fit job without risking AI hallucination.",
+    learnings: ["Deterministic gate filtering vastly outperforms AI evaluation at the top of the funnel for both speed and cost", "Local DB architectures like SQLite provide incredible speed and total privacy for personal applications"]
   }
 ];
