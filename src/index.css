@@ -1,176 +1,20 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  /* Core Palette: Modern Android Light */
-  --color-bg-main: #FFFFFF;
-  --color-bg-subtle: #F8FAFC;
-  --color-bg-tertiary: #F1F5F9;
+@layer base {
+  body {
+    background-color: theme('colors.background');
+    color: theme('colors.on-surface');
+  }
 
-  /* Accent Colors: Midnight & Amber */
-  --color-primary: #020617;        /* Midnight Blue */
-  --color-primary-soft: rgba(2, 6, 23, 0.05);
-  --color-secondary: #FFB703;      /* Warm Amber */
-  --color-secondary-soft: rgba(255, 183, 3, 0.1);
-  
-  /* Text & Borders */
-  --color-text-header: #020617;
-  --color-text-body: #475569;
-  --color-border-subtle: #E2E8F0;
-
-  /* Typography: Outfit */
-  --font-sans: 'Outfit', system-ui, -apple-system, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-
-  /* Material 3 Layout */
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
-  --radius-full: 9999px;
-
-  --shadow-sm: 0 1px 3px rgba(2, 6, 23, 0.1);
-  --shadow-md: 0 4px 6px -1px rgba(2, 6, 23, 0.1), 0 2px 4px -1px rgba(2, 6, 23, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(2, 6, 23, 0.1), 0 4px 6px -2px rgba(2, 6, 23, 0.05);
-
-  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
 }
 
-body {
-  font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.7; /* Increased for breathing room */
-  color: var(--color-text-body);
-  background-color: var(--color-bg-main);
-  margin: 0;
-  padding-top: 140px; /* More space for the floating navbar */
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Typography Overrides */
-h1, h2, h3, h4, .display-4, .display-2 {
-  font-family: var(--font-sans);
-  color: var(--color-text-header);
-  font-weight: 600; /* Lighter weight for a less "heavy" feel */
-  letter-spacing: -0.01em; /* Less aggressive tracking */
-  line-height: 1.25;
-}
-
-.display-2 {
-  font-size: 3.5rem; /* Slightly reduced from default */
-}
-
-.text-gradient {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #334155 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Global Utilities */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.border-top-subtle {
-  border-top: 1px solid var(--color-border-subtle);
-}
-
-.pill {
-  border-radius: var(--radius-full) !important;
-}
-
-.py-section {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.max-readable {
-  max-width: 680px;
-}
-
-/* Redesigned Components */
-.nav-container {
-  position: fixed;
-  top: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  width: auto;
-  min-width: 300px;
-}
-
-.nav-pill {
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-lg);
-  transition: var(--transition-smooth);
-}
-
-.card-m3 {
-  background: var(--color-bg-main);
-  border: 1px solid var(--color-border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 3rem; /* Pulsed padding for a premium feel */
-  transition: var(--transition-smooth);
-}
-
-.card-m3:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-secondary);
-}
-
-/* Background Animation */
-@keyframes float {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(10px, 20px); }
-  100% { transform: translate(0, 0); }
-}
-
-.bg-blob {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  filter: blur(80px);
-  opacity: 0.15;
-  z-index: -1;
-  border-radius: 50%;
-  animation: float 20s infinite ease-in-out;
-}
-
-.blob-blue { background: var(--color-primary); top: -10%; left: -10%; }
-.blob-yellow { background: var(--color-secondary); bottom: -10%; right: -10%; animation-delay: -5s; }
-
-/* Bootstrap Button Overrides */
-.btn {
-  border-radius: var(--radius-full);
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  transition: var(--transition-smooth);
-}
-
-.btn-primary {
-  background-color: var(--color-primary) !important;
-  border-color: var(--color-primary) !important;
-  color: #FFFFFF !important;
-}
-
-.btn-primary:hover {
-  background-color: #1e293b !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(2, 6, 23, 0.2);
-}
-
-.btn-outline-primary {
-  color: var(--color-primary) !important;
-  border-color: var(--color-primary) !important;
-  border-width: 1.5px !important;
-}
-
-.btn-outline-primary:hover {
-  background-color: var(--color-primary-soft) !important;
-  transform: translateY(-2px);
+@layer utilities {
+  .jamaican-gradient-text {
+    @apply text-green-600;
+  }
 }

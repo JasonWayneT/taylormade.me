@@ -10,9 +10,9 @@ import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="flex flex-col min-h-screen bg-background font-body-md text-on-surface">
       <Navigation />
-      <main className="flex-grow-1">
+      <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />

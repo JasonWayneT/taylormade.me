@@ -1,66 +1,55 @@
-import { motion } from 'framer-motion';
-
 export default function Contact() {
   return (
-    <div className="pt-10 overflow-hidden position-relative min-vh-100 d-flex flex-column">
-      <div className="bg-blob blob-blue" style={{ top: '-10%', left: '0', opacity: '0.05' }}></div>
-      <div className="bg-blob blob-yellow" style={{ bottom: '-10%', right: '0', opacity: '0.05' }}></div>
-
-      <div className="container my-auto pt-20 pb-32">
-        <div className="row g-12 align-items-center justify-content-center">
-          <div className="col-lg-5 mb-16 mb-lg-0">
-            <motion.div
-               initial={{ opacity: 0, x: -30 }}
-               animate={{ opacity: 1, x: 0 }}
-               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <h1 className="display-2 fw-bold mb-8">Discuss a <br /><span className="text-gradient">high-intent</span> project.</h1>
-              <p className="h4 fw-medium mb-12 text-secondary" style={{ lineHeight: '1.6' }}>
-                I am currently open to high-impact Product Management and Platform Engineering opportunities.
-              </p>
-              
-              <div className="d-flex flex-column gap-6">
-                <div>
-                  <h4 className="h6 fw-bold text-uppercase mb-2" style={{ letterSpacing: '0.1em' }}>Email</h4>
-                  <a href="mailto:jason.taylor@example.com" className="h4 fw-bold nav-link-custom mb-0">jason.taylor@example.com</a>
-                </div>
-                <div>
-                  <h4 className="h6 fw-bold text-uppercase mb-2" style={{ letterSpacing: '0.1em' }}>Social</h4>
-                  <div className="d-flex gap-4">
-                     <a href="#" className="h4 fw-bold nav-link-custom mb-0">LinkedIn ↗</a>
-                     <a href="#" className="h4 fw-bold nav-link-custom mb-0">GitHub ↗</a>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+    <div className="w-full max-w-7xl mx-auto px-8 py-section-padding flex flex-col justify-center min-h-[70vh]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h1 className="font-h1 text-h1 text-text-primary mb-8 leading-tight">
+            Discuss a <br />
+            <span className="text-primary">leadership</span> role.
+          </h1>
+          <p className="font-body-lg text-text-secondary mb-12 leading-relaxed max-w-md">
+            I am currently looking for my next full-time product leadership role focused on platform and infrastructure health.
+          </p>
+          
+          <div className="flex flex-col gap-8">
+             <div>
+               <h4 className="text-xs font-bold text-text-secondary uppercase tracking-widest mb-2">Email</h4>
+               <a href="mailto:Jason.Wayne.T@gmail.com" className="font-h3 text-xl text-text-primary hover:text-primary transition-colors text-decoration-none">
+                 Jason.Wayne.T@gmail.com
+               </a>
+             </div>
+            <div>
+              <h4 className="text-xs font-bold text-text-secondary uppercase tracking-widest mb-2">Social</h4>
+               <div className="flex gap-6">
+                  <a href="https://www.linkedin.com/in/jasonwaynetaylor/" target="_blank" rel="noopener noreferrer" className="font-h3 text-xl text-text-primary hover:text-primary transition-colors text-decoration-none flex items-center gap-1">
+                    LinkedIn <span className="material-symbols-outlined text-sm">north_east</span>
+                  </a>
+                  <a href="https://github.com/JasonWayneT" target="_blank" rel="noopener noreferrer" className="font-h3 text-xl text-text-primary hover:text-primary transition-colors text-decoration-none flex items-center gap-1">
+                    GitHub <span className="material-symbols-outlined text-sm">north_east</span>
+                  </a>
+               </div>
+            </div>
           </div>
+        </div>
 
-          <div className="col-lg-5 offset-lg-1">
-             <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                className="card-m3 p-10 shadow-lg border-0"
-             >
-                <form className="d-flex flex-column gap-6">
-                   <div>
-                      <label className="form-label small fw-bold text-uppercase text-secondary" style={{ letterSpacing: '0.05em' }}>Full Name</label>
-                      <input type="text" className="form-control border-0 py-3 px-4 rounded-xl" placeholder="Alex Rivera" style={{ backgroundColor: 'var(--color-bg-subtle)' }} />
-                   </div>
-                   <div>
-                      <label className="form-label small fw-bold text-uppercase text-secondary" style={{ letterSpacing: '0.05em' }}>Work Email</label>
-                      <input type="email" className="form-control border-0 py-3 px-4 rounded-xl" placeholder="alex@company.com" style={{ backgroundColor: 'var(--color-bg-subtle)' }} />
-                   </div>
-                   <div>
-                      <label className="form-label small fw-bold text-uppercase text-secondary" style={{ letterSpacing: '0.05em' }}>Message</label>
-                      <textarea className="form-control border-0 py-4 px-4 rounded-xl" rows="4" placeholder="How can I help you scale?" style={{ backgroundColor: 'var(--color-bg-subtle)' }}></textarea>
-                   </div>
-                   <button type="submit" className="btn btn-primary pill w-100 py-4 fs-5 shadow-lg mt-4">
-                      Submit Request ↗
-                   </button>
-                </form>
-             </motion.div>
-          </div>
+        <div className="bg-surface border border-border-subtle rounded-2xl p-10 shadow-sm">
+          <form className="flex flex-col gap-6">
+            <div>
+               <label className="block text-xs font-bold text-text-secondary uppercase tracking-widest mb-2">Full Name</label>
+               <input type="text" className="w-full bg-surface-container-low border border-border-subtle rounded-lg px-4 py-3 font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Alex Rivera" />
+            </div>
+            <div>
+               <label className="block text-xs font-bold text-text-secondary uppercase tracking-widest mb-2">Work Email</label>
+               <input type="email" className="w-full bg-surface-container-low border border-border-subtle rounded-lg px-4 py-3 font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="alex@company.com" />
+            </div>
+            <div>
+               <label className="block text-xs font-bold text-text-secondary uppercase tracking-widest mb-2">Message</label>
+               <textarea className="w-full bg-surface-container-low border border-border-subtle rounded-lg px-4 py-3 font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all min-h-[120px]" placeholder="How can I help you scale?"></textarea>
+            </div>
+            <button type="submit" className="mt-4 bg-primary text-on-primary w-full py-4 rounded-xl font-manrope font-bold hover:bg-accent-hover transition-colors flex items-center justify-center gap-2">
+               Submit Request <span className="material-symbols-outlined text-sm">north_east</span>
+            </button>
+          </form>
         </div>
       </div>
     </div>
