@@ -22,9 +22,9 @@ export default function Home() {
               Explore Projects
               <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
             </Link>
-            <a href="#" className="bg-white border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-gray-50 transition-colors text-decoration-none">
+            <Link to="/resume" className="bg-white border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-gray-50 transition-colors text-decoration-none">
               View Resume
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -183,9 +183,9 @@ export default function Home() {
             <Link to="/contact" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-accent-hover transition-colors text-decoration-none">
               Get in Touch
             </Link>
-            <a href="#" className="bg-white border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-gray-50 transition-colors text-decoration-none">
+            <Link to="/work-history" className="bg-white border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-gray-50 transition-colors text-decoration-none">
               Download Work History
-            </a>
+            </Link>
           </div>
         </div>
       </section>
