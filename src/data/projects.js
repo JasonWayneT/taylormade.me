@@ -40,5 +40,19 @@ export const projects = [
     approach: "Engineered a local React application backed by SQLite. Implemented an automated background scout that ingests job board firehoses and applies deterministic blocklists before surfacing roles.",
     results: "Replaced manual spreadsheeting with a fully automated local job sanctuary. The scout strips away thousands of irrelevant roles instantly.",
     learnings: ["Deterministic gate filtering vastly outperforms AI evaluation at the top of the funnel.", "Local DB architectures provide incredible speed and privacy."]
+  },
+  {
+    id: "kinbridge",
+    title: "KinBridge: AI Companion for Seniors",
+    summary: "A heartfelt AI platform designed to bridge the gap in senior care through health monitoring, daily companionship, and legacy planning.",
+    role: "Full-Stack Architect",
+    type: "AI Healthcare Platform",
+    tags: ["LLMs", "Health Monitoring", "Legacy Planning"],
+    liveUrl: "https://kinbridge.polsia.app/",
+    context: "Senior isolation and the burden of caregiving are growing societal challenges that require scalable, compassionate technical solutions.",
+    goals: ["Provide daily AI companionship to reduce senior isolation", "Implement passive health monitoring and alerts for family members", "Create a secure 'Last Words' vault for legacy planning and farewells"],
+    approach: "Built a cross-platform application leveraging LLMs for natural conversation and empathetic engagement. Integrated data pipelines for health tracking and a high-security encrypted vault for legacy assets.",
+    results: "Deployed a comprehensive caregiving companion that humanizes AI for the aging population while providing peace of mind to their families.",
+    learnings: ["Empathy is a first-class feature in senior-focused AI.", "Designing for non-technical users requires extreme simplicity and proactive guidance."]
   }
 ];

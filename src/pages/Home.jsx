@@ -112,7 +112,7 @@ export default function Home() {
           </div>
           
           {/* JobAgent Card */}
-          <div className="group relative bg-surface border border-border-subtle rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500">
+          <div className="group relative bg-surface border border-border-subtle rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 mb-8">
             <div className="absolute top-0 right-0 p-8">
               <span className="px-4 py-1.5 bg-green-500 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">Lab Project</span>
             </div>
@@ -134,6 +134,36 @@ export default function Home() {
                   <Link to="/case-study/jobagent" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-accent-hover transition-all active:scale-95 text-decoration-none">
                     Explore Lab Project
                     <span className="material-symbols-outlined text-sm">science</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* KinBridge Card */}
+          <div className="group relative bg-surface border border-border-subtle rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500">
+            <div className="absolute top-0 right-0 p-8">
+              <span className="px-4 py-1.5 bg-blue-500 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">AI Platform</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-12">
+              <div className="md:col-span-5 bg-blue-50 flex items-center justify-center p-12 min-h-[300px]">
+                <div className="w-32 h-32 bg-white rounded-[2rem] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500">
+                  <span className="material-symbols-outlined text-blue-600 text-6xl" data-weight="fill">volunteer_activism</span>
+                </div>
+              </div>
+              <div className="md:col-span-7 p-12 flex flex-col justify-center">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded uppercase tracking-wider">Senior Care</span>
+                  <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded uppercase tracking-wider">Social Impact</span>
+                </div>
+                <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">KinBridge</h3>
+                <p className="font-body-lg text-text-secondary mb-8 leading-relaxed">
+                  A heartfelt AI companion for seniors, bridging care gaps with health monitoring, daily interaction, and legacy planning. Humanizing AI for the aging population and their families.
+                </p>
+                <div className="flex items-center gap-6">
+                  <Link to="/case-study/kinbridge" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-accent-hover transition-all active:scale-95 text-decoration-none">
+                    Explore AI Companion
+                    <span className="material-symbols-outlined text-sm">auto_awesome</span>
                   </Link>
                 </div>
               </div>
