@@ -10,6 +10,8 @@ export default function Footer() {
         <div className="flex items-center gap-6 text-sm font-medium font-inter">
           <a className="text-text-secondary hover:text-text-primary transition-colors text-decoration-none" href="https://www.linkedin.com/in/jasonwaynetaylor/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a className="text-text-secondary hover:text-text-primary transition-colors text-decoration-none" href="https://github.com/JasonWayneT" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a className="text-text-secondary hover:text-text-primary transition-colors text-decoration-none" href="/work-history">Work History</a>
+          <a className="text-text-secondary hover:text-text-primary transition-colors text-decoration-none" href="/resume">Resume</a>
           <a className="text-text-secondary hover:text-text-primary transition-colors text-decoration-none" href="mailto:Jason.Wayne.T@gmail.com">Email</a>
         </div>
       </div>

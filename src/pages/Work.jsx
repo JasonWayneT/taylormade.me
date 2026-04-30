@@ -7,9 +7,13 @@ export default function Work() {
       <section className="mb-20">
         <div className="max-w-3xl">
           <h1 className="font-h1 text-h1 text-text-primary mb-6">Selected Systems & <span className="text-primary">Platform Engineering</span></h1>
-          <p className="font-body-lg text-body-lg text-text-secondary leading-relaxed">
+          <p className="font-body-lg text-body-lg text-text-secondary leading-relaxed mb-6">
             A record of architectural leadership and execution in high-trust environments. Specializing in platform stability, data migration tooling, and large-scale product infrastructure.
           </p>
+          <Link to="/work-history" className="inline-flex items-center gap-2 text-primary font-manrope font-bold hover:underline text-decoration-none">
+            View full narrative work history
+            <span className="material-symbols-outlined text-sm">arrow_forward</span>
+          </Link>
         </div>
       </section>
 

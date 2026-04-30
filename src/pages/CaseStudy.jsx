@@ -114,6 +114,9 @@ export default function CaseStudy() {
             )
           )}
         </div>
+        <p className="mt-8 text-text-secondary font-manrope text-sm max-w-lg mx-auto leading-relaxed">
+          For a full breakdown of technical achievements and platform milestones, see my <Link to="/resume" className="text-primary font-bold hover:underline">resume</Link>. This serves as the technical specification for the professional history documented above.
+        </p>
       </footer>
     </article>
   );

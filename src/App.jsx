@@ -7,6 +7,8 @@ import Work from './pages/Work';
 import CaseStudy from './pages/CaseStudy';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import WorkHistory from './pages/WorkHistory';
+import Resume from './pages/Resume';
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/work-history" element={<WorkHistory />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/case-study/:id" element={<CaseStudy />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
