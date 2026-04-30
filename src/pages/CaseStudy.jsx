@@ -22,6 +22,10 @@ export default function CaseStudy() {
         <span className="material-symbols-outlined text-sm">arrow_back</span>
         Back to Projects
       </Link>
+
+      <div className="aspect-video bg-gray-100 rounded-2xl overflow-hidden mb-12 shadow-sm">
+        <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+      </div>
       
       <header className="mb-16 border-b border-border-subtle pb-12">
         <h1 className="font-h1 text-h1 text-text-primary mb-6">{project.title}</h1>

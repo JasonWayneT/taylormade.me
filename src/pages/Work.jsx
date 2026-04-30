@@ -71,12 +71,9 @@ export default function Work() {
           {/* Side Card: Migration Tooling */}
           <div className="col-span-12 lg:col-span-4 group">
             <div className="bg-surface border border-border-subtle rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col">
-              <div className="h-48 bg-gray-900 flex items-center justify-center p-8">
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <span className="material-symbols-outlined text-green-400 text-6xl opacity-50">database</span>
-                  <span className="material-symbols-outlined text-blue-400 text-4xl absolute -right-2 top-2">sync_alt</span>
+                <div className="aspect-video bg-surface-container overflow-hidden">
+                  <img src="/images/migration.png" alt="Migration Tooling Visualization" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
-              </div>
               <div className="p-stack-lg flex-1">
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-green-50 text-green-700 text-[12px] font-semibold uppercase tracking-wider rounded border border-green-100">Infrastructure</span>
@@ -127,8 +124,8 @@ export default function Work() {
           {/* JobAgent */}
           <div className="col-span-12 group mb-8">
             <div className="bg-surface border border-border-subtle rounded-2xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-12 items-center">
-              <div className="w-24 h-24 bg-green-50 rounded-3xl flex items-center justify-center shrink-0 shadow-inner">
-                <span className="material-symbols-outlined text-green-600 text-5xl" data-weight="fill">precision_manufacturing</span>
+              <div className="w-48 h-32 md:w-64 md:h-40 bg-green-50 rounded-2xl flex items-center justify-center shrink-0 shadow-inner overflow-hidden">
+                <img src="/images/jobagent.png" alt="JobAgent Pipeline UI" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -150,8 +147,8 @@ export default function Work() {
           {/* KinBridge */}
           <div className="col-span-12 group">
             <div className="bg-surface border border-border-subtle rounded-2xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-12 items-center">
-              <div className="w-24 h-24 bg-blue-50 rounded-3xl flex items-center justify-center shrink-0 shadow-inner">
-                <span className="material-symbols-outlined text-blue-600 text-5xl" data-weight="fill">volunteer_activism</span>
+              <div className="w-48 h-32 md:w-64 md:h-40 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0 shadow-inner overflow-hidden">
+                <img src="/images/kinbridge.png" alt="KinBridge AI Care UI" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap gap-2 mb-4">

@@ -84,8 +84,8 @@ export default function Home() {
 
             {/* Migration Tooling */}
             <div className="md:col-span-12 group bg-white rounded-3xl border border-border-subtle overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row-reverse items-center">
-              <div className="w-full md:w-1/3 h-64 bg-gray-900 flex items-center justify-center p-8 shrink-0">
-                <span className="material-symbols-outlined text-green-400 text-6xl">database</span>
+              <div className="w-full md:w-1/3 h-64 bg-gray-900 flex items-center justify-center shrink-0 overflow-hidden">
+                <img src="/images/migration.png" alt="Migration Tooling" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-10 flex-1">
                 <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded uppercase tracking-wider mb-4 inline-block">Migration</span>
@@ -117,10 +117,8 @@ export default function Home() {
               <span className="px-4 py-1.5 bg-green-500 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">Lab Project</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-12">
-              <div className="md:col-span-5 bg-green-50 flex items-center justify-center p-12 min-h-[300px]">
-                <div className="w-32 h-32 bg-white rounded-[2rem] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500">
-                  <span className="material-symbols-outlined text-green-600 text-6xl" data-weight="fill">precision_manufacturing</span>
-                </div>
+              <div className="md:col-span-5 bg-green-50 flex items-center justify-center min-h-[300px] overflow-hidden">
+                <img src="/images/jobagent.png" alt="JobAgent" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="md:col-span-7 p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-6">
@@ -146,10 +144,8 @@ export default function Home() {
               <span className="px-4 py-1.5 bg-blue-500 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">AI Platform</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-12">
-              <div className="md:col-span-5 bg-blue-50 flex items-center justify-center p-12 min-h-[300px]">
-                <div className="w-32 h-32 bg-white rounded-[2rem] flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-500">
-                  <span className="material-symbols-outlined text-blue-600 text-6xl" data-weight="fill">volunteer_activism</span>
-                </div>
+              <div className="md:col-span-5 bg-blue-50 flex items-center justify-center min-h-[300px] overflow-hidden">
+                <img src="/images/kinbridge.png" alt="KinBridge" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="md:col-span-7 p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-6">
