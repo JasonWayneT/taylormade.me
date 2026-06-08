@@ -1,17 +1,80 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # taylormade.me
+
+> Jason Taylor's product management portfolio — case studies, work history, and resume for a systems-minded PM specializing in legacy platform stabilization, data integrity, and migration strategy.
+
+Live at **[taylormade.me](https://taylormade.me)**
+
+---
+
+## What This Is
+
+A portfolio site built to give hiring managers and recruiters a fast read on who I am as a PM and what I've shipped. The site leads with the problems I've solved — legacy platform stabilization, complex migrations, data integrity under constraint — and backs each case study with specifics: metrics, constraints, and decisions made.
+
+**What this is not:**
+- A generic template portfolio — the content and positioning are specific to my background
+- A product you install and use — it's a static site, just browse it
+
+---
+
+## Status
+
+| Field | Value |
+|---|---|
+| **Phase** | Production |
+| **Stability** | Live and maintained |
+| **URL** | [taylormade.me](https://taylormade.me) |
+| **Last updated** | June 2026 |
+
+---
+
+## Pages
+
+| Page | Purpose |
+|---|---|
+| `/` | Hero + positioning, key metrics, featured projects |
+| `/work` | Project cards with role, problem, and outcome |
+| `/work/:id` | Full case study — context, approach, outcome, learnings |
+| `/work-history` | Full employment history in narrative form |
+| `/resume` | Printable resume view |
+| `/about` | Background and approach |
+| `/contact` | Contact form |
+
+---
+
+## Running Locally
+
+```bash
+git clone https://github.com/JasonWayneT/taylormade.me.git
+cd taylormade.me
+npm install
+npm run dev
+```
+
+Opens at `http://localhost:5173`.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React 19 |
+| Build tool | Vite |
+| Styling | TailwindCSS |
+| Routing | React Router |
+| Hosting | Vercel |
+| Analytics | Vercel Analytics |
+
+---
+
+## How This Was Built
+
+The design system was defined first — typography, color tokens, component patterns — then content was written before any component code. Case studies were written as product narratives (problem → approach → outcome → learnings) rather than feature lists. The positioning ("systems-minded PM") was decided based on what's consistently true across all my work, not what sounds most general.
+
+The site is deployed on Vercel with a staging branch for previewing changes before they go live.
+
+---
+
+## License
+
+Private — content and design are not for reuse.
