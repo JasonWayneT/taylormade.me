@@ -118,13 +118,13 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-12">
               <div className="md:col-span-5 bg-green-50 flex items-center justify-center min-h-[300px] overflow-hidden">
-                <img src="/images/jobagent.png" alt="JobAgent" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src="/images/jobagent.png" alt="Applyr" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="md:col-span-7 p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded uppercase tracking-wider">Agentic Workflows</span>
                 </div>
-                <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">JobAgent</h3>
+                <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">Applyr</h3>
                 <p className="font-body-lg text-text-secondary mb-8 leading-relaxed">
                   A local, zero-knowledge web application that automates job scouting using deterministic gate filters. Replaces manual spreadsheeting with a stateful, 6-stage automated pipeline.
                 </p>

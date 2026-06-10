@@ -171,14 +171,14 @@ export default function Work() {
           <div className="col-span-12 group mb-8">
             <div className="bg-surface border border-border-subtle rounded-2xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-12 items-center">
               <div className="w-48 h-32 md:w-64 md:h-40 bg-green-50 rounded-2xl flex items-center justify-center shrink-0 shadow-inner overflow-hidden">
-                <img src="/images/jobagent.png" alt="JobAgent Pipeline UI" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="/images/jobagent.png" alt="Applyr Pipeline UI" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-widest rounded">Automation</span>
                   <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold uppercase tracking-widest rounded">Agentic Workflows</span>
                 </div>
-                <h3 className="font-h2 text-h3 text-text-primary mb-4">JobAgent</h3>
+                <h3 className="font-h2 text-h3 text-text-primary mb-4">Applyr</h3>
                 <p className="font-body-lg text-body-lg text-text-secondary mb-8 max-w-3xl">
                   Built a deterministic job scouting engine with SQLite and React, turning a manual job hunt into an automated pipeline. This project explores local-first agentic architectures and deterministic gate filtering.
                 </p>
