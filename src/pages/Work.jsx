@@ -6,9 +6,9 @@ export default function Work() {
       {/* Hero Section */}
       <section className="mb-20">
         <div className="max-w-3xl">
-          <h1 className="font-h1 text-h1 text-text-primary mb-6">Selected Systems & <span className="text-primary">Platform Engineering</span></h1>
+          <h1 className="font-h1 text-h1 text-text-primary mb-6">Selected <span className="text-primary">Work</span></h1>
           <p className="font-body-lg text-body-lg text-text-secondary leading-relaxed mb-6">
-            A record of architectural leadership and execution in high-trust environments. Specializing in platform stability, data migration tooling, and large-scale product infrastructure.
+            Eight years of product work across enterprise SaaS, consumer software, and tools I built for myself.
           </p>
           <Link to="/work-history" className="inline-flex items-center gap-2 text-primary font-manrope font-bold hover:underline text-decoration-none">
             View full narrative work history
@@ -21,7 +21,7 @@ export default function Work() {
       <section className="mb-24">
         <h2 className="font-h2 text-h2 text-text-primary mb-12 flex items-center gap-4">
           <span className="w-12 h-px bg-primary"></span>
-          Platform Leadership
+          Enterprise Platform
         </h2>
         <div className="grid grid-cols-12 gap-gutter">
           {/* Featured: Bellwether (Large) */}
@@ -38,8 +38,8 @@ export default function Work() {
                 </div>
                 <h3 className="font-h3 text-h3 text-text-primary mb-3">Bellwether Integration</h3>
                 <p className="font-body-md text-body-md text-text-secondary mb-8 max-w-2xl">
-                  Bypassed legacy ETL pipelines to establish a direct source-of-truth integration, solving the platform's #1 customer complaint and preventing 30-40% data drop-off. This was a critical "revenue-protection" move during a period of high infrastructure instability.
-                </p>
+                  Bypassed legacy ETL pipelines to establish a direct source-of-truth integration, solving the platform's #1 customer complaint and preventing 40% data drop-off.
+</p>
                 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                   <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
@@ -47,7 +47,7 @@ export default function Work() {
                     <div className="text-[10px] text-text-secondary uppercase tracking-tighter">Reduction in Complaints</div>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
-                    <div className="text-xl font-bold text-primary">30-40%</div>
+                    <div className="text-xl font-bold text-primary">40%</div>
                     <div className="text-[10px] text-text-secondary uppercase tracking-tighter">Data Loss Prevented</div>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
@@ -110,7 +110,53 @@ export default function Work() {
         </div>
       </section>
 
-      {/* Section 2: AI & Automation Lab */}
+      {/* Section 2: Consumer Software */}
+      <section className="mb-24">
+        <h2 className="font-h2 text-h2 text-text-primary mb-12 flex items-center gap-4">
+          <span className="w-12 h-px bg-purple-500"></span>
+          Consumer Software
+        </h2>
+        <div className="grid grid-cols-12 gap-gutter">
+          <div className="col-span-12 group">
+            <div className="bg-surface border border-border-subtle rounded-2xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-12 items-center">
+              <div className="w-48 h-32 md:w-64 md:h-40 bg-purple-50 rounded-2xl flex items-center justify-center shrink-0 shadow-inner">
+                <span className="material-symbols-outlined text-5xl text-purple-300">shield</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold uppercase tracking-widest rounded">Consumer</span>
+                  <span className="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-widest rounded">macOS</span>
+                  <span className="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-widest rounded">Browser Extensions</span>
+                </div>
+                <h3 className="font-h2 text-h3 text-text-primary mb-4">Sterkly: Airo & Safari Extensions</h3>
+                <p className="font-body-lg text-body-lg text-text-secondary mb-6 max-w-3xl">
+                  Owned delivery for Airo, a macOS security product, and a suite of Safari browser extensions for ad tech. Resolved a certificate distribution bottleneck that had been blocking product distribution, built an in-house procurement workflow, and ran QA across a globally distributed engineering team.
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+                  <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <div className="text-xl font-bold text-primary">$1M–$3M</div>
+                    <div className="text-[10px] text-text-secondary uppercase tracking-tighter">Revenue Sustained</div>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <div className="text-xl font-bold text-primary">~$100</div>
+                    <div className="text-[10px] text-text-secondary uppercase tracking-tighter">Saved Per Certificate</div>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <div className="text-xl font-bold text-primary">3</div>
+                    <div className="text-[10px] text-text-secondary uppercase tracking-tighter">Countries Coordinated</div>
+                  </div>
+                </div>
+                <Link to="/work-history" className="flex items-center gap-4 text-primary font-semibold text-decoration-none hover:gap-6 transition-all">
+                  <span>Full Story in Work History</span>
+                  <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: AI & Automation Lab */}
       <section className="mb-24">
         <div className="flex items-center justify-between mb-12">
           <h2 className="font-h2 text-h2 text-text-primary flex items-center gap-4">
@@ -134,7 +180,7 @@ export default function Work() {
                 </div>
                 <h3 className="font-h2 text-h3 text-text-primary mb-4">JobAgent</h3>
                 <p className="font-body-lg text-body-lg text-text-secondary mb-8 max-w-3xl">
-                  Engineered a deterministic job scouting engine with SQLite and React, turning a manual job hunt into an automated pipeline. This project explores local-first agentic architectures and deterministic gate filtering.
+                  Built a deterministic job scouting engine with SQLite and React, turning a manual job hunt into an automated pipeline. This project explores local-first agentic architectures and deterministic gate filtering.
                 </p>
                 <Link to="/case-study/jobagent" className="bg-primary text-on-primary px-6 py-3 rounded-xl font-manrope font-bold inline-flex items-center gap-2 hover:bg-accent-hover transition-colors text-decoration-none text-sm">
                   Explore Lab Project
@@ -152,15 +198,16 @@ export default function Work() {
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-widest rounded">AI Healthcare</span>
+                  <span className="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-widest rounded">Voice AI</span>
+                  <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold uppercase tracking-widest rounded">LLM Pipeline</span>
                   <span className="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-widest rounded">Social Impact</span>
                 </div>
                 <h3 className="font-h2 text-h3 text-text-primary mb-4">KinBridge</h3>
                 <p className="font-body-lg text-body-lg text-text-secondary mb-8 max-w-3xl">
-                  A heartfelt AI platform designed to bridge the gap in senior care through health monitoring, daily companionship, and legacy planning. This project explores the intersection of empathetic AI and proactive health management.
+                  A voice messaging and letter generation pipeline for end-of-life communication. Built with ElevenLabs for voice synthesis and an LLM layer for generating meaningful letters.
                 </p>
                 <Link to="/case-study/kinbridge" className="bg-primary text-on-primary px-6 py-3 rounded-xl font-manrope font-bold inline-flex items-center gap-2 hover:bg-accent-hover transition-colors text-decoration-none text-sm">
-                  Explore AI Companion
+                  Explore the Project
                   <span className="material-symbols-outlined text-sm">auto_awesome</span>
                 </Link>
               </div>
@@ -188,8 +235,8 @@ export default function Work() {
               <span className="w-2 h-2 rounded-full bg-green-500"></span> Data Systems
             </h4>
             <ul className="space-y-4 text-text-secondary font-body-md p-0 m-0" style={{ listStyle: 'none' }}>
-              <li className="flex justify-between border-b border-gray-100 pb-2"><span>SQL / Relational DB</span> <span className="text-green-600 font-mono text-xs">Expert</span></li>
-              <li className="flex justify-between border-b border-gray-100 pb-2"><span>ETL & Data Integrity</span> <span className="text-green-600 font-mono text-xs">Expert</span></li>
+              <li className="flex justify-between border-b border-gray-100 pb-2"><span>SQL / Relational DB</span> <span className="text-green-600 font-mono text-xs">Working Knowledge</span></li>
+              <li className="flex justify-between border-b border-gray-100 pb-2"><span>ETL & Data Integrity</span> <span className="text-green-600 font-mono text-xs">Working Knowledge</span></li>
               <li className="flex justify-between border-b border-gray-100 pb-2"><span>Ingestion Pipelines</span> <span className="text-green-600 font-mono text-xs">Advanced</span></li>
             </ul>
           </div>
@@ -202,54 +249,6 @@ export default function Work() {
               <li className="flex justify-between border-b border-gray-100 pb-2"><span>Infrastructure Health</span> <span className="text-yellow-600 font-mono text-xs">Advanced</span></li>
               <li className="flex justify-between border-b border-gray-100 pb-2"><span>Legacy Tech Debt</span> <span className="text-yellow-600 font-mono text-xs">Expert</span></li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4: Operational DNA */}
-      <section className="mb-24 py-16 border-t border-border-subtle">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <h2 className="font-h2 text-h2 text-text-primary mb-4">Strategic Execution</h2>
-            <p className="text-text-secondary">Beyond technical delivery, I own the translation of business strategy into disciplined, measurable roadmaps.</p>
-          </div>
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div className="bg-surface-container-low p-8 rounded-2xl border border-border-subtle">
-              <div className="text-primary mb-4">
-                <span className="material-symbols-outlined text-4xl">calendar_today</span>
-              </div>
-              <h4 className="font-h3 text-xl font-bold mb-3">8-Week Planning Cycles</h4>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                Implemented rigorous quarterly planning cadences, converting high-level mandates (Stability, Cost, Churn) into granular epics with validated capacity modeling.
-              </p>
-            </div>
-            <div className="bg-surface-container-low p-8 rounded-2xl border border-border-subtle">
-              <div className="text-primary mb-4">
-                <span className="material-symbols-outlined text-4xl">hub</span>
-              </div>
-              <h4 className="font-h3 text-xl font-bold mb-3">Cross-Functional Sync</h4>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                Orchestrated alignment across Sales, InfoSec, GTM, and CX. Managed complex stakeholder requirements to ensure revenue-critical features shipped on time.
-              </p>
-            </div>
-            <div className="bg-surface-container-low p-8 rounded-2xl border border-border-subtle">
-              <div className="text-primary mb-4">
-                <span className="material-symbols-outlined text-4xl">check_circle</span>
-              </div>
-              <h4 className="font-h3 text-xl font-bold mb-3">Full-Cycle Ownership</h4>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                Responsible for the entire lifecycle: from initial GTM planning and compliance alignment to engineering execution and post-launch stability.
-              </p>
-            </div>
-            <div className="bg-surface-container-low p-8 rounded-2xl border border-border-subtle">
-              <div className="text-primary mb-4">
-                <span className="material-symbols-outlined text-4xl">verified_user</span>
-              </div>
-              <h4 className="font-h3 text-xl font-bold mb-3">Technical Partnership</h4>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                Operated as a peer to engineering managers, facilitating trade-off discussions and architectural decisions to protect platform health while delivering value.
-              </p>
-            </div>
           </div>
         </div>
       </section>

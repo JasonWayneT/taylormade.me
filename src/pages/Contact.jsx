@@ -4,11 +4,11 @@ export default function Contact() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <h1 className="font-h1 text-h1 text-text-primary mb-8 leading-tight">
-            Discuss a <br />
-            <span className="text-primary">leadership</span> role.
+            Let's talk about a <br />
+            <span className="text-primary">PM role.</span>
           </h1>
           <p className="font-body-lg text-text-secondary mb-12 leading-relaxed max-w-md">
-            I am currently looking for my next full-time product leadership role focused on platform and infrastructure health.
+            I am currently looking for my next full-time product role. If you're looking for a PM who can keep complex systems stable and customers successful, let's talk.
           </p>
           
           <div className="flex flex-col gap-8">
@@ -44,7 +44,7 @@ export default function Contact() {
             </div>
             <div>
                <label className="block text-xs font-bold text-text-secondary uppercase tracking-widest mb-2">Message</label>
-               <textarea className="w-full bg-surface-container-low border border-border-subtle rounded-lg px-4 py-3 font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all min-h-[120px]" placeholder="How can I help you scale?"></textarea>
+               <textarea className="w-full bg-surface-container-low border border-border-subtle rounded-lg px-4 py-3 font-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all min-h-[120px]" placeholder="Tell me about the role."></textarea>
             </div>
             <button type="submit" className="mt-4 bg-primary text-on-primary w-full py-4 rounded-xl font-manrope font-bold hover:bg-accent-hover transition-colors flex items-center justify-center gap-2">
                Submit Request <span className="material-symbols-outlined text-sm">north_east</span>

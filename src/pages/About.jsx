@@ -4,11 +4,11 @@ export default function About() {
       <section className="mb-20">
         <div className="max-w-3xl">
           <h1 className="font-h1 text-h1 text-text-primary mb-8 leading-tight">
-            Building foundation, <br />
-            <span className="jamaican-gradient-text">not just features.</span>
+            I keep the customer in the room. <br />
+            <span className="jamaican-gradient-text">Then I make sure it ships.</span>
           </h1>
           <p className="font-body-lg text-body-lg text-primary font-medium mb-0 leading-relaxed">
-            I am a Product Manager with 6+ years of experience in B2B SaaS ecosystems, specializing in legacy platform stabilization, data integrity, and complex technical-business alignment.
+            Eight years across ops automation, consumer software, and enterprise SaaS. I started at Zero To Sixty Media building internal tooling. Then Sterkly, where I worked on consumer software (macOS security and Safari extensions). Then Cision, where I managed a $40M ARR enterprise media monitoring platform serving 3,500 accounts.
           </p>
         </div>
       </section>
@@ -19,16 +19,19 @@ export default function About() {
             <div className="mb-16">
               <h3 className="text-xs font-bold text-secondary uppercase tracking-widest mb-6">Philosophy</h3>
               <p className="font-body-lg text-text-secondary mb-6 leading-relaxed">
-                I translate high-level executive strategy into rigorous, executable roadmaps. Whether the mandate is platform stability, cost reduction, or revenue protection during a legacy sunset, I own the full cycle—from strategic alignment to shipping on time.
+                I think good product work starts with customers and builds up from there. Strategy without customer insight is guessing. Prioritization without strategy is noise. I organize my thinking around the opportunity solution tree: connecting customer outcomes to the opportunities blocking those outcomes before I ever consider solutions. It keeps you from skipping to an answer before you've understood the problem.
               </p>
               <p className="font-body-lg text-text-secondary mb-6 leading-relaxed">
-                Most platforms fail because the foundation is ignored. I focus on the reverse—engineering the robust data pipelines and infrastructure integrity required to support sustainable innovation. At Cision, this meant operating as the central SME across a complex ecosystem, managing eight-week planning cycles, and bridging the gap between engineering execution and business outcomes.
+                What I care most about is escaping the build trap. Shipping is not the goal. The goal is the change in customer behavior or business result the ship was supposed to create. At Cision, that meant making customer signals (ticket volume, churn risk, escalation patterns) the actual prioritization input for the engineering roadmap, not just talking points for retrospectives.
               </p>
               <p className="font-body-lg text-text-secondary mb-6 leading-relaxed">
-                I am a deeply technical Product Manager, but I am first and foremost a cross-functional orchestrator. I believe a product is only as good as the alignment between Sales, InfoSec, GTM, and Engineering. My job is to ensure that alignment is unbreakable.
+                I'm technically literate. I'm comfortable in a room with engineers, DBAs, and DevOps. But I'm not a deeply technical PM and I don't try to be. That's not the value I add. My value is translating what customers actually need into a plan the engineering team can execute, and making sure the decisions trace back to something real.
+              </p>
+              <p className="font-body-lg text-text-secondary mb-6 leading-relaxed">
+                Outside of work, I build local-first tools with LLMs, mostly things I actually need. The job search tool I use to manage my own applications is one of them. I like the work that happens when you're both the PM and the user.
               </p>
               <p className="font-body-lg text-text-secondary mb-0 leading-relaxed font-semibold">
-                I am currently looking for my next full-time product leadership role.
+                I'm looking for an IC PM role, ideally consumer or consumer-adjacent. B2B is on the table too, especially where the product is close to the end user. Not looking for Director or VP.
               </p>
             </div>
 
@@ -60,7 +63,7 @@ export default function About() {
                 
                 <div className="p-8 rounded-xl border border-border-subtle bg-surface-container-low shadow-sm">
                    <div className="text-xs font-bold text-text-secondary uppercase tracking-widest mb-4">Previously</div>
-                   <div className="font-body-lg font-bold text-text-primary">Senior Product Manager • Cision</div>
+                   <div className="font-body-lg font-bold text-text-primary">Product Manager • Cision</div>
                 </div>
 
                 <div className="p-8 rounded-xl border border-border-subtle bg-surface-container-low shadow-sm">
@@ -69,6 +72,7 @@ export default function About() {
                       <span className="px-3 py-1 bg-white text-text-primary text-xs font-bold rounded uppercase tracking-wider border border-border-subtle shadow-sm">SaaS</span>
                       <span className="px-3 py-1 bg-white text-text-primary text-xs font-bold rounded uppercase tracking-wider border border-border-subtle shadow-sm">B2B</span>
                       <span className="px-3 py-1 bg-white text-text-primary text-xs font-bold rounded uppercase tracking-wider border border-border-subtle shadow-sm">Enterprise</span>
+                      <span className="px-3 py-1 bg-white text-text-primary text-xs font-bold rounded uppercase tracking-wider border border-border-subtle shadow-sm">Consumer</span>
                    </div>
                 </div>
 

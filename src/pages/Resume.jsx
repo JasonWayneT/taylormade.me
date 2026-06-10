@@ -39,9 +39,9 @@ export default function Resume() {
 
         {/* Professional Summary */}
         <section className="mb-8">
-          <h2 className="text-lg font-bold uppercase tracking-widest border-b border-gray-300 mb-4 pb-1 font-sans">Product Manager – Platform & Revenue Systems (B2B SaaS)</h2>
+          <h2 className="text-lg font-bold uppercase tracking-widest border-b border-gray-300 mb-4 pb-1 font-sans">Product Manager – Platform & Revenue Systems</h2>
           <p className="text-[11pt] leading-relaxed italic text-gray-700">
-            Product Manager with 6+ years of experience owning complex B2B SaaS platforms (~$40M ARR). Specialized in defining product strategy for platform modernization, reducing high-impact churn drivers, and leading cross-functional teams through data-intensive migration and stabilization initiatives. Proven track record defining and executing roadmaps for revenue-bearing legacy systems, prioritizing high-risk stability initiatives, and leading architectural simplifications that eliminate systemic data integrity failures.
+            Product Manager with 8 years in product, most recently as sole PM of a complex B2B platform (~$40M ARR). Specialized in defining product strategy for platform modernization, reducing high-impact churn drivers, and leading cross-functional teams through data-intensive migration and stabilization initiatives. Experienced in defining and executing roadmaps for revenue-bearing legacy systems, prioritizing high-risk stability initiatives, and leading architectural simplifications that eliminate systemic data integrity failures.
           </p>
         </section>
 
@@ -77,8 +77,8 @@ export default function Resume() {
             </p>
             
             <ul className="list-disc ml-5 space-y-2 text-[10pt] leading-relaxed text-gray-800">
-              <li><strong>Bellwether Initiative:</strong> Led architectural bypass of legacy ETL pipelines to establish direct GPOD integration, eliminating a 30–40% data drop-off and neutralizing the platform's primary driver of customer churn.</li>
-              <li><strong>Platform Ownership:</strong> Integrated C3 with upstream systems (GPOD, UCP) and aligned with enterprise-wide data initiatives (Nexus/EDP) while managing engineering teams of 6–15 engineers.</li>
+              <li><strong>Bellwether Initiative:</strong> Led architectural bypass of legacy ETL pipelines to establish direct source-of-truth database integration, eliminating a 40% data drop-off and neutralizing the platform's primary driver of customer churn.</li>
+              <li><strong>Platform Ownership:</strong> Integrated the customer-facing platform with upstream content monitoring and contact database systems, and aligned with enterprise-wide data unification initiatives while managing engineering teams of 6–15 engineers.</li>
               <li><strong>Stability & Security:</strong> Resolved ~90% of a 300-item penetration test backlog. Reduced recurring outages tied to DT Search indexing failures through storage monitoring and dead-account cleanup.</li>
               <li><strong>Migration Strategy:</strong> Developed phased voluntary migration tooling that transitioned ~700 high-risk accounts to new platforms while protecting revenue during legacy sunset.</li>
               <li><strong>Premium Content:</strong> Executed licensing-compliant integrations for providers including LexisNexis, NYT, Bloomberg, and Dow Jones/Factiva.</li>
@@ -92,9 +92,9 @@ export default function Resume() {
               <h3 className="text-xl font-bold">Sterkly Services</h3>
               <span className="text-sm font-bold font-sans">Feb 2019 – Aug 2021</span>
             </div>
-            <div className="text-md font-bold text-gray-700 mb-4 font-sans italic uppercase tracking-wide">Product Manager</div>
+            <div className="text-md font-bold text-gray-700 mb-4 font-sans italic uppercase tracking-wide">Product Owner / Product Manager</div>
             <p className="text-[10pt] leading-relaxed text-gray-800">
-              Maintained delivery continuity in a technical environment where throughput depended on removing operational bottlenecks. Facilitated requirements sessions, aligned cross-functional stakeholders, and bridged the gap between engineering execution and business constraints.
+              Owned delivery for Airo (macOS security) and a suite of Safari browser extensions for ad tech. Resolved a certificate distribution bottleneck that had been blocking product revenue, building an in-house procurement workflow that saved ~$100 per certificate and sustained an estimated $1M–$3M in revenue. Led QA and backlog management for a globally distributed engineering team across three countries.
             </p>
           </div>
 

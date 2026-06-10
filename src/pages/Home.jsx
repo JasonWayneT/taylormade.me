@@ -8,14 +8,14 @@ export default function Home() {
         <div className="max-w-3xl">
           <div className="flex items-center gap-2 mb-6">
             <span className="h-px w-8 bg-primary"></span>
-            <span className="font-label-sm text-primary uppercase tracking-widest">Systems-Minded Product Management</span>
+            <span className="font-label-sm text-primary uppercase tracking-widest">Product Manager — B2B Platform · Consumer Software · 8 Years</span>
           </div>
           <h1 className="font-h1 text-h1 text-text-primary mb-8 leading-tight">
-            Build resilient systems. <br />
-            <span className="jamaican-gradient-text">Deliver global scale.</span>
+            Keep customers successful. <br />
+            <span className="jamaican-gradient-text">Ship what actually matters.</span>
           </h1>
           <p className="font-body-lg text-body-lg text-text-secondary mb-10 max-w-2xl">
-            Specializing in legacy platform stabilization, data integrity initiatives, and migration strategy. I manage complex technical debt and protect revenue under strict operational constraints.
+            I spent four years at Cision as the voice of 3,500 enterprise accounts in a room full of engineers, translating what customers actually needed into what the platform shipped. Before that, two years building consumer software at Sterkly: macOS security tools and Safari extensions. I've worked close to engineering my whole career, but my job has always been about the customer on the other side.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link to="/work" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-accent-hover transition-colors text-decoration-none">
@@ -154,7 +154,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">KinBridge</h3>
                 <p className="font-body-lg text-text-secondary mb-8 leading-relaxed">
-                  A heartfelt AI companion for seniors, bridging care gaps with health monitoring, daily interaction, and legacy planning. Humanizing AI for the aging population and their families.
+                  A voice messaging and letter generation pipeline for end-of-life communication. Built with ElevenLabs for voice synthesis and an LLM layer for generating meaningful letters.
                 </p>
                 <div className="flex items-center gap-6">
                   <Link to="/case-study/kinbridge" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-accent-hover transition-all active:scale-95 text-decoration-none">
@@ -171,9 +171,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="max-w-7xl mx-auto px-8 py-24 text-center">
         <div className="max-w-2xl mx-auto">
-          <h2 className="font-h2 text-h2 mb-6">Looking for your next platform leader?</h2>
+          <h2 className="font-h2 text-h2 mb-6">Looking for your next PM?</h2>
           <p className="font-body-lg text-text-secondary mb-10">
-            I'm currently looking for my next full-time product leadership role where I can apply my experience in platform stabilization and infrastructure strategy.
+            I'm currently looking for my next full-time product role where I can apply my experience in platform stabilization, data integrity, and keeping customers successful.
           </p>
           <div className="flex justify-center gap-4">
             <Link to="/contact" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-accent-hover transition-colors text-decoration-none">
