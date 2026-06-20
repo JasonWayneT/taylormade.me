@@ -204,7 +204,7 @@ export default function Work() {
                 </div>
                 <h3 className="font-h2 text-h3 text-text-primary mb-4">Leaflet PDF</h3>
                 <p className="font-body-lg text-body-lg text-text-secondary mb-8 max-w-3xl">
-                  An AI pipeline that transforms raw non-fiction content into structured, typeset reading artifacts. Extracts claims, selects learning formats (BLUF, jargon translation, facts-to-implications, mental buckets), and renders to PDF using a full typographic design system — no API key required.
+                  An AI pipeline that transforms raw non-fiction content into structured, typeset reading artifacts. Extracts claims, selects learning formats (BLUF, jargon translation, facts-to-implications, mental buckets), and renders to PDF using a full typographic design system with no API key required.
                 </p>
                 <Link to="/case-study/leafletpdf" className="bg-primary text-on-primary px-6 py-3 rounded-xl font-manrope font-bold inline-flex items-center gap-2 hover:bg-accent-hover transition-colors text-decoration-none text-sm">
                   Explore Lab Project
