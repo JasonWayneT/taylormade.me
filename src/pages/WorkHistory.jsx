@@ -86,6 +86,9 @@ export default function WorkHistory() {
           <div className="relative pl-8 border-l-2 border-border-subtle">
             <div className="absolute -left-2 top-0 w-4 h-4 rounded-full bg-border-subtle"></div>
             <div className="mb-6">
+              <div className="rounded-2xl overflow-hidden mb-6 border border-border-subtle">
+                <img src="/images/sterkly.svg" alt="Sterkly — software distribution & monetization" className="w-full h-40 object-cover" />
+              </div>
               <div className="flex flex-wrap items-center justify-between gap-4 mb-2">
                 <h3 className="font-h3 text-h3 text-text-primary">Sterkly Services</h3>
                 <span className="text-sm font-bold text-text-secondary bg-surface-container px-3 py-1 rounded-full uppercase tracking-widest">2019 – 2021</span>

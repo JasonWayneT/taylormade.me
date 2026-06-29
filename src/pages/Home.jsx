@@ -66,6 +66,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Bellwether */}
             <div className="md:col-span-12 group bg-surface rounded-3xl border border-border-subtle hover:border-transparent overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row">
+              <div className="w-full md:w-1/3 h-64 flex items-center justify-center shrink-0 overflow-hidden">
+                <img src="/images/cision.svg" alt="Cision" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
               <div className="p-10 flex-1">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider">Data Integrity</span>
