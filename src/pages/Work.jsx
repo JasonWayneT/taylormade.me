@@ -214,25 +214,25 @@ export default function Work() {
             </div>
           </div>
 
-          {/* KinBridge */}
+          {/* Lede */}
           <div className="col-span-12 group">
             <div className="bg-surface border border-border-subtle rounded-2xl p-10 hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row gap-12 items-center">
-              <div className="w-48 h-32 md:w-64 md:h-40 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0 shadow-inner overflow-hidden">
-                <img src="/images/kinbridge.png" alt="KinBridge AI Care UI" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              <div className="w-48 h-32 md:w-64 md:h-40 bg-stone-100 rounded-2xl flex items-center justify-center shrink-0 shadow-inner overflow-hidden">
+                <img src="/images/lede.png" alt="Lede briefing dashboard" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
               </div>
               <div className="flex-1">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold uppercase tracking-widest rounded">Voice AI</span>
-                  <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold uppercase tracking-widest rounded">LLM Pipeline</span>
-                  <span className="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-widest rounded">Social Impact</span>
+                  <span className="px-2 py-0.5 bg-green-50 text-green-700 text-[10px] font-bold uppercase tracking-widest rounded">AI Pipeline</span>
+                  <span className="px-2 py-0.5 bg-orange-50 text-orange-700 text-[10px] font-bold uppercase tracking-widest rounded">Local LLM</span>
+                  <span className="px-2 py-0.5 bg-purple-50 text-purple-700 text-[10px] font-bold uppercase tracking-widest rounded">TTS</span>
                 </div>
-                <h3 className="font-h2 text-h3 text-text-primary mb-4">KinBridge</h3>
+                <h3 className="font-h2 text-h3 text-text-primary mb-4">Lede</h3>
                 <p className="font-body-lg text-body-lg text-text-secondary mb-8 max-w-3xl">
-                  A voice messaging and letter generation pipeline for end-of-life communication. Built with ElevenLabs for voice synthesis and an LLM layer for generating meaningful letters.
+                  A self-hosted newsletter intelligence briefing. Reads your Gmail, runs a 10-stage local LLM pipeline, and delivers a structured MP3 audio briefing — no cloud spend, no API key required.
                 </p>
-                <Link to="/case-study/kinbridge" className="bg-primary text-on-primary px-6 py-3 rounded-xl font-manrope font-bold inline-flex items-center gap-2 hover:bg-accent-hover transition-colors text-decoration-none text-sm">
-                  Explore the Project
-                  <span className="material-symbols-outlined text-sm">auto_awesome</span>
+                <Link to="/case-study/lede" className="bg-primary text-on-primary px-6 py-3 rounded-xl font-manrope font-bold inline-flex items-center gap-2 hover:bg-accent-hover transition-colors text-decoration-none text-sm">
+                  Explore Lab Project
+                  <span className="material-symbols-outlined text-sm">science</span>
                 </Link>
               </div>
             </div>
