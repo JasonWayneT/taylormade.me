@@ -34,7 +34,7 @@ export default function Navigation() {
             );
           })}
         </div>
-        <Link to="/contact" className="bg-primary text-on-primary px-5 py-2.5 rounded-lg font-manrope text-sm font-semibold active:scale-95 transition-transform hover:bg-accent-hover text-decoration-none">
+        <Link to="/contact" className="bg-surface-container-high text-text-primary px-5 py-3 rounded-lg font-manrope text-sm font-semibold active:scale-95 transition-transform hover:bg-surface-dim text-decoration-none border border-border-subtle">
           Get in Touch
         </Link>
       </nav>

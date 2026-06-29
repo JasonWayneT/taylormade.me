@@ -22,7 +22,7 @@ export default function Home() {
               Explore Projects
               <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
             </Link>
-            <Link to="/resume" className="bg-white border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-gray-50 transition-colors text-decoration-none">
+            <Link to="/resume" className="bg-surface border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-surface-container-low transition-colors text-decoration-none">
               View Resume
             </Link>
           </div>
@@ -32,22 +32,22 @@ export default function Home() {
       {/* Metrics/Sub-Hero Grid */}
       <section className="max-w-7xl mx-auto px-8 mb-24">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-8 rounded-2xl border border-border-subtle">
-            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+          <div className="bg-surface p-8 rounded-2xl border border-border-subtle">
+            <div className="w-12 h-12 bg-surface-container text-text-secondary rounded-lg flex items-center justify-center mb-6">
               <span className="material-symbols-outlined" data-icon="speed">speed</span>
             </div>
             <h3 className="font-h3 text-h3 mb-2">Platform Stability</h3>
             <p className="text-text-secondary">Stabilized a $40M ARR enterprise platform, reducing outages and mitigating ~90% of the security backlog under constraint.</p>
           </div>
-          <div className="bg-white p-8 rounded-2xl border border-border-subtle">
-            <div className="w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center mb-6">
+          <div className="bg-surface p-8 rounded-2xl border border-border-subtle">
+            <div className="w-12 h-12 bg-surface-container text-text-secondary rounded-lg flex items-center justify-center mb-6">
               <span className="material-symbols-outlined" data-icon="database">database</span>
             </div>
             <h3 className="font-h3 text-h3 mb-2">Data Integrity</h3>
             <p className="text-text-secondary">Bypassed legacy ETL pipelines to deliver a 100% reduction in stale-data complaints, addressing a major churn driver.</p>
           </div>
-          <div className="bg-white p-8 rounded-2xl border border-border-subtle">
-            <div className="w-12 h-12 bg-yellow-50 text-yellow-600 rounded-lg flex items-center justify-center mb-6">
+          <div className="bg-surface p-8 rounded-2xl border border-border-subtle">
+            <div className="w-12 h-12 bg-surface-container text-text-secondary rounded-lg flex items-center justify-center mb-6">
               <span className="material-symbols-outlined" data-icon="psychology">psychology</span>
             </div>
             <h3 className="font-h3 text-h3 mb-2">Migration Strategy</h3>
@@ -65,17 +65,17 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Bellwether */}
-            <div className="md:col-span-12 group bg-white rounded-3xl border border-border-subtle overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row">
+            <div className="md:col-span-12 group bg-surface rounded-3xl border border-border-subtle hover:border-transparent overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row">
               <div className="p-10 flex-1">
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs font-bold rounded uppercase tracking-wider">Data Integrity</span>
-                  <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded uppercase tracking-wider">Featured</span>
+                  <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider">Data Integrity</span>
+                  <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider">Featured</span>
                 </div>
                 <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">Bellwether Integration</h3>
                 <p className="font-body-lg text-text-secondary max-w-2xl mb-8">
                   Architectural bypass of brittle legacy ETL pipelines to establish direct source-of-truth integration, solving the platform's #1 customer complaint and protecting revenue.
                 </p>
-                <Link to="/case-study/bellwether" className="font-manrope font-bold text-primary flex items-center gap-2 group/link text-decoration-none">
+                <Link to="/case-study/bellwether" className="font-manrope font-bold text-text-primary flex items-center gap-2 group/link text-decoration-none hover:underline">
                   View Case Study
                   <span className="material-symbols-outlined group-hover/link:translate-x-1 transition-transform" data-icon="east">east</span>
                 </Link>
@@ -83,17 +83,17 @@ export default function Home() {
             </div>
 
             {/* Migration Tooling */}
-            <div className="md:col-span-12 group bg-white rounded-3xl border border-border-subtle overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row-reverse items-center">
+            <div className="md:col-span-12 group bg-surface rounded-3xl border border-border-subtle hover:border-transparent overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col md:flex-row-reverse items-center">
               <div className="w-full md:w-1/3 h-64 bg-gray-900 flex items-center justify-center shrink-0 overflow-hidden">
                 <img src="/images/migration.png" alt="Migration Tooling" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="p-10 flex-1">
-                <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded uppercase tracking-wider mb-4 inline-block">Migration</span>
+                <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider mb-4 inline-block">Migration</span>
                 <h3 className="font-h3 text-h2 mb-3">Migration Tooling</h3>
                 <p className="text-text-secondary mb-6 font-body-lg">
                   Structured tooling for transitioning 700+ enterprise clients off a legacy platform without workflow loss.
                 </p>
-                <Link to="/case-study/migration" className="text-sm font-bold text-primary flex items-center gap-1 text-decoration-none hover:gap-2 transition-all">
+                <Link to="/case-study/migration" className="text-sm font-bold text-text-primary flex items-center gap-1 text-decoration-none hover:underline hover:gap-2 transition-all">
                   Read Project Brief
                   <span className="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
                 </Link>
@@ -104,32 +104,32 @@ export default function Home() {
       </section>
 
       {/* Independent AI Lab Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-8">
           <div className="mb-16">
             <h2 className="font-h2 text-h2 text-text-primary mb-4">Independent AI Lab</h2>
             <p className="text-text-secondary max-w-xl">Exploring local-first agentic architectures, deterministic filtering, and AI-driven workflow automation.</p>
           </div>
-          
+
           {/* JobAgent Card */}
-          <div className="group relative bg-surface border border-border-subtle rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 mb-8">
+          <div className="group relative bg-surface border border-border-subtle hover:border-transparent rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500 mb-8">
             <div className="absolute top-0 right-0 p-8">
-              <span className="px-4 py-1.5 bg-green-500 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">Lab Project</span>
+              <span className="px-4 py-2 bg-surface-container-high text-text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full border border-border-subtle">Lab Project</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-12">
-              <div className="md:col-span-5 bg-green-50 flex items-center justify-center min-h-[300px] overflow-hidden">
+              <div className="md:col-span-5 bg-surface-container-low flex items-center justify-center min-h-[300px] overflow-hidden">
                 <img src="/images/jobagent.png" alt="Applyr" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="md:col-span-7 p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-bold rounded uppercase tracking-wider">Agentic Workflows</span>
+                  <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider">Agentic Workflows</span>
                 </div>
                 <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">Applyr</h3>
                 <p className="font-body-lg text-text-secondary mb-8 leading-relaxed">
                   A local, zero-knowledge web application that automates job scouting using deterministic gate filters. Replaces manual spreadsheeting with a stateful, 6-stage automated pipeline.
                 </p>
                 <div className="flex items-center gap-6">
-                  <Link to="/case-study/jobagent" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-accent-hover transition-all active:scale-95 text-decoration-none">
+                  <Link to="/case-study/jobagent" className="bg-surface-container-high text-text-primary border border-border-subtle px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-surface-dim transition-all active:scale-95 text-decoration-none">
                     Explore Lab Project
                     <span className="material-symbols-outlined text-sm">science</span>
                   </Link>
@@ -139,25 +139,25 @@ export default function Home() {
           </div>
 
           {/* KinBridge Card */}
-          <div className="group relative bg-surface border border-border-subtle rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500">
+          <div className="group relative bg-surface border border-border-subtle hover:border-transparent rounded-[2.5rem] overflow-hidden hover:shadow-2xl transition-all duration-500">
             <div className="absolute top-0 right-0 p-8">
-              <span className="px-4 py-1.5 bg-blue-500 text-white text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">AI Platform</span>
+              <span className="px-4 py-2 bg-surface-container-high text-text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full border border-border-subtle">AI Platform</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-12">
-              <div className="md:col-span-5 bg-blue-50 flex items-center justify-center min-h-[300px] overflow-hidden">
+              <div className="md:col-span-5 bg-surface-container-low flex items-center justify-center min-h-[300px] overflow-hidden">
                 <img src="/images/kinbridge.png" alt="KinBridge" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="md:col-span-7 p-12 flex flex-col justify-center">
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded uppercase tracking-wider">Senior Care</span>
-                  <span className="px-3 py-1 bg-green-100 text-green-700 text-xs font-bold rounded uppercase tracking-wider">Social Impact</span>
+                  <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider">Senior Care</span>
+                  <span className="px-3 py-1 bg-surface-container text-text-secondary text-xs font-bold rounded uppercase tracking-wider">Social Impact</span>
                 </div>
                 <h3 className="font-h1 text-h2 mb-4 group-hover:text-primary transition-colors">KinBridge</h3>
                 <p className="font-body-lg text-text-secondary mb-8 leading-relaxed">
                   A voice messaging and letter generation pipeline for end-of-life communication. Built with ElevenLabs for voice synthesis and an LLM layer for generating meaningful letters.
                 </p>
                 <div className="flex items-center gap-6">
-                  <Link to="/case-study/kinbridge" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-accent-hover transition-all active:scale-95 text-decoration-none">
+                  <Link to="/case-study/kinbridge" className="bg-surface-container-high text-text-primary border border-border-subtle px-8 py-4 rounded-xl font-manrope font-bold flex items-center gap-2 hover:bg-surface-dim transition-all active:scale-95 text-decoration-none">
                     Explore AI Companion
                     <span className="material-symbols-outlined text-sm">auto_awesome</span>
                   </Link>
@@ -179,7 +179,7 @@ export default function Home() {
             <Link to="/contact" className="bg-primary text-on-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-accent-hover transition-colors text-decoration-none">
               Get in Touch
             </Link>
-            <Link to="/work-history" className="bg-white border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-gray-50 transition-colors text-decoration-none">
+            <Link to="/work-history" className="bg-surface border border-border-subtle text-text-primary px-8 py-4 rounded-xl font-manrope font-bold hover:bg-surface-container-low transition-colors text-decoration-none">
               Download Work History
             </Link>
           </div>
